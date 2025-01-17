@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramienta-V2</title>
+
+    
+<style>
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #111;
+    color: #eee;
+    overflow: auto;
+    padding: 20px; /* Agrega espacio alrededor */
+    box-sizing: border-box; /* Considera el padding en el tamaño total */
+}
+
+
+
+.background-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1a237e, #311b92, #4a148c, #6a1b9a); /* Degradado */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: 0;
+    opacity: 0.9;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background: rgba(25, 25, 25, 0.9); /* Contenedor semi-transparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+    width: 550px;
+    max-width: 95%;
+    text-align: center;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin-bottom: 25px;
+    color: #9fa8da; /* Título azul grisáceo */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #b39ddb;
+}
+
+textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #333; /* Borde oscuro */
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+    background-color: #222; /* Fondo oscuro del textarea */
+    color: #eee;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #9fa8da; /* Borde azul al enfocar */
+}
+
+
+button {
+    padding: 12px 25px;
+    background-color: #6200ea; /* Botón morado */
+    color: #fff; /* Texto blanco del botón */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+button:hover {
+    background-color: #4a148c; /* Botón morado más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+
+#resultados {
+    margin-top: 25px;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.sugerencia {
+     border: 1px solid #444; /* Borde gris oscuro */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #222; /* Fondo gris oscuro */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sugerencia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+}
+
+
+.sugerencia h3 {
+    margin-top: 0;
+    color: #9fa8da; /* Título azul grisáceo */
+    margin-bottom: 10px;
+     font-weight: 600;
+}
+
+
+.sugerencia p {
+    margin-bottom: 8px;
+    color: #eee;
+}
+
+.sugerencia strong {
+    color: #9fa8da; /* Resalta los nombres */
+    font-weight: 600;
+}
+
+.sugerencia a {
+    color: #9fa8da; /* Links azules */
+    text-decoration: none;
+    transition: color 0.3s ease;
+      word-break: break-all;
+}
+
+
+.sugerencia a:hover {
+    color: #b39ddb; /* Links azules más claros */
+}
+
+.sugerencia .opciones-token {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+      margin-bottom: 10px;
+}
+
+.sugerencia .opcion-token {
+    background-color: #333;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sugerencia .opcion-token:hover {
+    background-color: #444;
+}
+
+
+.sugerencia .seleccionado {
+    background-color: #6200ea;
+     color: #fff;
+}
+    
+</style>
+
+
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="container">
+        <h1>Link Generator</h1>
+        <textarea id="linkInput" placeholder="Paste your link here"></textarea>
+        <button id="generarButton">Generate Link</button><br><br>
+        <div id="resultados"></div>
+    </div>
+
+    
+</body>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+    const linkInput = document.getElementById('linkInput');
+    const generarButton = document.getElementById('generarButton');
+    const resultadosDiv = document.getElementById('resultados');
+    const datosURL = 'https://raw.githubusercontent.com/UnevennesX/UnevennesX/main/datos-info.txt';
+    let dataCache = [];
+
+     // Función para obtener los datos del archivo TXT
+    async function obtenerDatos() {
+        try {
+            const response = await fetch(datosURL);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.text();
+            return parseData(data);
+        } catch (error) {
+            console.error('Error al obtener los datos:', error);
+            resultadosDiv.innerHTML = 'Error al cargar los datos.';
+            return [];
+        }
+    }
+
+  // Función para parsear los datos del TXT
+  function parseData(data) {
+        const entries = data.split('----------------').filter(Boolean);
+        const parsedData = entries.map(entry => {
+            const lines = entry.trim().split('\n');
+            const entryData = {};
+            lines.forEach(line => {
+                const [key, value] = line.split(': ').map(s => s.trim());
+                if (key && value) {
+                    entryData[key] = value;
+                }
+            });
+            return entryData;
+        }).filter(entry => entry['Tipo de Survey'] === 'Samplicious');
+     
+    return parsedData
+    }
+
+    // Función para buscar coincidencias y priorizar la mejor
+     function buscarCoincidencias(link, data) {
+        const url = new URL(link.startsWith('http') ? link : `https://${link}`);
+        const hostname = url.hostname;
+        const domain = hostname.replace(/^www\./, '');
+         const searchTerms = [
+             hostname,
+            domain,
+             domain.replace(/^www\./, ''),
+        ];
+
+         let exactMatch = null
+          const matches = data.filter(item => {
+            const nombre = item.Nombre.toLowerCase();
+            const isMatch = searchTerms.some(term => nombre.includes(term.toLowerCase()));
+           
+              if(isMatch){
+                 if(searchTerms.some(term => nombre === term.toLowerCase())){
+                     exactMatch = item
+                   }
+              }
+             return isMatch
+        });
+
+           if (exactMatch && matches.length > 1 ) {
+             return [exactMatch, ...matches.filter(match => match !== exactMatch)];
+            }
+        return matches;
+    }
+    
+     // Función para generar la sugerencia del link
+   function generarSugerencia(link, match, index, tokenSeleccionado = null, totalMatches) {
+        const ridMatch = link.match(/(67[0-9a-fA-F-]+)/);
+        let rid = null;
+           if (ridMatch) {
+              rid = ridMatch[1];
+         }
+
+         if (!rid) {
+            return '<p>No se encontró un ID que empiece por 67 en el enlace.</p>';
+         }
+          const tokens = generarOpcionesToken(match.URL);
+         let selectedToken = tokenSeleccionado;
+          if(!selectedToken){
+             selectedToken =  tokens[0]
+         }
+
+          let generatedLink = match.URL;
+          const hasTokenParam = match.URL.includes('token=');
+         const hasRidParam = match.URL.includes('RID=');
+         
+           if (hasTokenParam && hasRidParam) {
+              const tokenIndex = match.URL.indexOf('token=');
+              const ridIndex = match.URL.indexOf('RID=');
+
+            if (tokenIndex < ridIndex) {
+              generatedLink = match.URL.replace(/token=[^&]*/, `token=${selectedToken}`).replace(/RID=[^&]*/, `RID=${rid}`);
+           } else {
+               generatedLink =  match.URL.replace(/RID=[^&]*/, `RID=${rid}`).replace(/token=[^&]*/, `token=${selectedToken}`);
+            }
+           } else {
+            const separator = match.URL.includes('?') ? '&' : '?';
+            generatedLink = `${match.URL}${separator}token=${selectedToken}&RID=${rid}`
+           }
+          
+        let tokenOptionsHTML = '';
+          if(tokens.length>1){
+             tokenOptionsHTML = `<div class="opciones-token">
+                ${tokens.map((token, i) => {
+                    const isSelectedClass = token === selectedToken ? 'seleccionado' : '';
+                    const tokenLabel = `${token.substring(0, 2)}...${token.substring(token.length - 2)}`;
+                    return `<span class="opcion-token ${isSelectedClass}" data-token="${token}"  data-index="${index}" >${tokenLabel}</span>`;
+                }).join('')}
+            </div>`;
+        }
+      const suggestionTitle = totalMatches > 1 ? `<h3>Sugerencia ${index + 1}</h3>` : `<h3>Sugerencia</h3>`;
+        return `
+            <div class="sugerencia" data-index="${index}">
+                ${suggestionTitle}
+                <p><strong>Tipo de Survey:</strong> Samplicious</p>
+                <p><strong>Nombre de Survey:</strong> <br> <strong>${match.Nombre}</strong></p>
+                   ${tokenOptionsHTML}
+                 <p><strong>Comentario:</strong> ${match.Comentario}</p>
+                <p><strong>Fecha:</strong> ${match.Fecha}</p>
+                
+                 <p><strong>Link Generado:</strong> <br> <a href="${generatedLink}" target="_blank" > ${generatedLink}</a> </p>
+            </div>
+        `;
+    }
+    
+    function generarOpcionesToken(url){
+       const urlParams = new URL(url).searchParams
+        const tokenParam = urlParams.get('token')
+         if(tokenParam){
+            return [tokenParam]
+       }
+
+        const tokenMatches = url.match(/token=([a-f0-9-]+)/g);
+         if (tokenMatches) {
+            return  tokenMatches.map(match => match.split("=")[1])
+        }
+        return []
+   }
+
+    // Función principal para manejar la generación de links
+    async function generarLinks() {
+        resultadosDiv.innerHTML = 'Cargando...';
+        const link = linkInput.value.trim();
+        if (!link) {
+            resultadosDiv.innerHTML = 'Por favor, introduce un link.';
+            return;
+        }
+
+       if (dataCache.length === 0) {
+           dataCache = await obtenerDatos();
+       }
+         if (dataCache.length === 0) {
+           return;
+        }
+         const coincidencias = buscarCoincidencias(link, dataCache);
+          if (coincidencias.length === 0) {
+             resultadosDiv.innerHTML = 'No se encontraron coincidencias.';
+             return;
+         }
+
+         let sugerenciasHTML = '';
+         coincidencias.forEach((match, index) => {
+           sugerenciasHTML += generarSugerencia(link, match, index, null, coincidencias.length);
+         });
+
+        resultadosDiv.innerHTML = sugerenciasHTML;
+
+          const opcionesToken = document.querySelectorAll('.opcion-token');
+        opcionesToken.forEach(opcion =>{
+            opcion.addEventListener('click', function() {
+                const token = this.getAttribute('data-token')
+                const index = this.getAttribute('data-index')
+
+                const parentDiv =  document.querySelector(`.sugerencia[data-index="${index}"]`);
+
+                const tokensSpan = parentDiv.querySelectorAll(".opcion-token");
+                tokensSpan.forEach(span => {
+                      span.classList.remove("seleccionado")
+                 });
+                this.classList.add("seleccionado");
+
+               const match = coincidencias[index];
+                 const linkGenerado = generarSugerencia(link, match, parseInt(index),token, coincidencias.length)
+                
+                   parentDiv.outerHTML = linkGenerado;
+            })
+        })
+    }
+
+    generarButton.addEventListener('click', generarLinks);
+});
+
+</script>
+
+
+</html>
