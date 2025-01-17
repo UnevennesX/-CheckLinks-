@@ -57,7 +57,7 @@ h1 {
 }
 
 h1:hover {
-    color: #eee;
+    color: #ff4081;
 }
 
 textarea {
@@ -221,8 +221,28 @@ button:hover {
    color: #ddd;
 }
 
-
+h1 {
+    margin-bottom: 25px;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
     
+
+
+.linkpagina {
+    color: #ff4081;
+      cursor: pointer;
+        transition: color 0.3s ease;
+}
+
+.linkpagina:hover {
+  color: #b82b82;
+}
+
 </style>
 
 
@@ -232,7 +252,7 @@ button:hover {
     <div class="stars"></div>
     <div class="twinkling"></div>
     <div class="container">
-        <h1>Link - UnevennesX</h1>
+        <h1 id="linkTitle" >Link - UnevennesX</h1>
         <textarea id="linkInput" placeholder="Paste your link here"></textarea>
         <button id="generarButton">Generate Link</button><br><br>
         <div id="resultados"></div>
@@ -243,7 +263,9 @@ button:hover {
         <div class="modal-content">
             <span class="close-button" id="closeModal">×</span>
             <h2>Información</h2>
-            <p>Este es un generador de links creado por UnevennesX. <br><br>Si tiene alguna duda, comunicarse con unevennesx@gmail.com</p>
+            <p>Este es un generador de links creado por UnevennesX. <br><br>Esta basado en el .TXT que genera mi pagina como respado.</p>
+            <h1 class="linkpagina"  data-url="https://mi-pg.vercel.app/login/">UnevennesX</h1>
+
         </div>
     </div>
 
@@ -478,19 +500,26 @@ document.addEventListener('DOMContentLoaded', () => {
 const linkTitle = document.getElementById('linkTitle');
     const infoModal = document.getElementById('infoModal');
     const closeModalButton = document.getElementById('closeModal');
-   
+     const linkpagina = document.querySelector('.linkpagina');
+    
     linkTitle.addEventListener('click', () => {
-          infoModal.style.display = 'block';
+         infoModal.style.display = 'block';
     });
 
     closeModalButton.addEventListener('click', () => {
-          infoModal.style.display = 'none';
+        infoModal.style.display = 'none';
     });
     
-    window.addEventListener('click', (event) => {
-         if (event.target === infoModal) {
-            infoModal.style.display = 'none';
+   window.addEventListener('click', (event) => {
+        if (event.target === infoModal) {
+             infoModal.style.display = 'none';
         }
+   });
+  
+    linkpagina.addEventListener('click', () => {
+        const url = linkpagina.getAttribute('data-url');
+        window.open(url, '_blank');
+        infoModal.style.display = 'none';
     });
 
 </script>
