@@ -346,66 +346,94 @@ document.addEventListener('DOMContentLoaded', () => {
         return matches;
     }
 
-     // Función para generar la sugerencia del link
+
+
+
+
+
+
+
+
+
+
     function generarSugerencia(link, match, index, tokenSeleccionado = null, totalMatches) {
-        const ridMatch = link.match(/(67[0-9a-fA-F-]+)/);
-        let rid = null;
-        if (ridMatch) {
-            rid = ridMatch[1];
-         }
+    const tokens = generarOpcionesToken(match.URL);
+    let selectedToken = tokenSeleccionado;
 
-        if (!rid) {
-           return '<p>No se encontró un ID que empiece por 67 en el enlace.</p>';
-        }
-         const tokens = generarOpcionesToken(match.URL);
-        let selectedToken = tokenSeleccionado;
-         if(!selectedToken){
-             selectedToken =  tokens[0]
-          }
-
-         let generatedLink = match.URL;
-          const hasTokenParam = match.URL.includes('token=');
-         const hasRidParam = match.URL.includes('RID=');
-
-          if (hasTokenParam && hasRidParam) {
-             const tokenIndex = match.URL.indexOf('token=');
-              const ridIndex = match.URL.indexOf('RID=');
-            if (tokenIndex < ridIndex) {
-              generatedLink =  match.URL.replace(/token=[^&]*/, `token=${selectedToken}`).replace(/RID=[^&]*/, `RID=${rid}`);
-             } else {
-               generatedLink =  match.URL.replace(/RID=[^&]*/, `RID=${rid}`).replace(/token=[^&]*/, `token=${selectedToken}`);
-           }
-         } else{
-            const separator = match.URL.includes('?') ? '&' : '?';
-           generatedLink = `${match.URL}${separator}token=${selectedToken}&RID=${rid}`
-         }
-
-       let tokenOptionsHTML = '';
-
-          if(tokens.length>1){
-             tokenOptionsHTML = `<div class="opciones-token">
-                ${tokens.map((token, i) => {
-                    const isSelectedClass = token === selectedToken ? 'seleccionado' : '';
-                    const tokenLabel = `${token.substring(0, 2)}...${token.substring(token.length - 2)}`;
-                    return `<span class="opcion-token ${isSelectedClass}" data-token="${token}"  data-index="${index}" >${tokenLabel}</span>`;
-                }).join('')}
-            </div>`;
-          }
-      const suggestionTitle = totalMatches > 1 ? `<h3>Sugerencia ${index + 1}</h3>` : `<h3>Sugerencia</h3>`;
-
-        return `
-            <div class="sugerencia" data-index="${index}">
-                ${suggestionTitle}
-                <p><strong>Tipo de Survey:</strong> Samplicious</p>
-                <p><strong>Nombre de Survey:</strong> <br> <strong>${match.Nombre}</strong></p>
-                 ${tokenOptionsHTML}
-                  <p><strong>Comentario:</strong> ${match.Comentario}</p>
-                <p><strong>Fecha:</strong> ${match.Fecha}</p>
-              
-               <p><strong>Link Generado:</strong> <br> <span class="copy-link" data-link="${generatedLink}" style="cursor:pointer; text-decoration: underline; text-decoration-color:#bbb;">${generatedLink}</span></p>
-           </div>
-       `;
+    if (!selectedToken && tokens.length > 0) {
+        selectedToken = tokens[0];
+    } else if (!selectedToken && tokens.length === 0) {
+        return '<p>No se encontraron tokens disponibles.</p>';
     }
+
+    const ridMatch = link.match(/(67[0-9a-fA-F-]+)/);
+    const rid = ridMatch ? ridMatch[1] : null;
+
+    if (!rid) {
+        return '<p>No se encontró un ID que empiece por 67 en el enlace.</p>';
+    }
+
+    // Intentar analizar la URL del template
+    let templateURL, templateParams, paramOrder;
+    try {
+        templateURL = new URL(match.URL);
+        templateParams = templateURL.searchParams;
+        paramOrder = Array.from(templateParams.entries());
+    } catch (error) {
+        console.error("Error: URL inválida -", match.URL);
+        return `<p>Error: La URL proporcionada no es válida (${match.URL}).</p>`;
+    }
+
+    // Construir la URL basándose en el orden del template
+    let generatedLink = `https://notch.insights.supply/cb?`;
+    let firstParam = true;
+
+    for (const [paramKey, paramValue] of paramOrder) {
+        let value = paramKey === 'token' ? selectedToken : (paramKey.toLowerCase() === 'rid' ? rid : paramValue);
+        let paramName = paramKey;
+
+        if (paramName.toLowerCase() === 'rid') {
+            paramName = 'RID'; // Mantener el nombre del parámetro en mayúsculas
+        }
+
+        if (value !== undefined && value !== null && value !== '') { // Agregar solo si tiene valor
+            generatedLink += (firstParam ? '' : '&') + `${paramName}=${value}`;
+            firstParam = false;
+        }
+    }
+
+    let tokenOptionsHTML = '';
+    if (tokens.length > 1) {
+        tokenOptionsHTML = `<div class="opciones-token">
+            ${tokens.map((token, i) => {
+                const isSelectedClass = token === selectedToken ? 'seleccionado' : '';
+                const tokenLabel = `${token.substring(0, 2)}...${token.substring(token.length - 2)}`;
+                return `<span class="opcion-token ${isSelectedClass}" data-token="${token}" data-index="${index}">${tokenLabel}</span>`;
+            }).join('')}
+        </div>`;
+    }
+
+    const suggestionTitle = totalMatches > 1 ? `<h3>Sugerencia ${index + 1}</h3>` : `<h3>Sugerencia</h3>`;
+
+    return `
+        <div class="sugerencia" data-index="${index}">
+            ${suggestionTitle}
+            <p><strong>Tipo de Survey:</strong> Samplicious</p>
+            <p><strong>Nombre de Survey:</strong> ${match.Nombre}</p>
+            ${tokenOptionsHTML}
+            <p><strong>Comentario:</strong> ${match.Comentario}</p>
+            <p><strong>Fecha:</strong> ${match.Fecha}</p>
+            <p><strong>Link Generado:</strong> <span class="copy-link" data-link="${generatedLink}" style="cursor:pointer; text-decoration: underline; text-decoration-color:#bbb;">${generatedLink}</span></p>
+        </div>
+    `;
+}
+
+
+
+
+
+
+    
     
   function generarOpcionesToken(url){
         const urlParams = new URL(url).searchParams
@@ -421,26 +449,64 @@ document.addEventListener('DOMContentLoaded', () => {
         return []
    }
 
-    // Función principal para manejar la generación de links
-    async function generarLinks() {
-        resultadosDiv.innerHTML = 'Cargando...';
-        const link = linkInput.value.trim();
-        if (!link) {
-            resultadosDiv.innerHTML = 'Por favor, introduce un link.';
-            return;
-        }
-         if (dataCache.length === 0) {
-            dataCache = await obtenerDatos();
-         }
-           if (dataCache.length === 0) {
-            return;
-          }
 
-         const coincidencias = buscarCoincidencias(link, dataCache);
-         if (coincidencias.length === 0) {
-            resultadosDiv.innerHTML = 'No se encontraron coincidencias.';
-             return;
-         }
+
+
+
+
+
+   async function generarLinks() {
+    resultadosDiv.innerHTML = 'Cargando...';
+    const link = linkInput.value.trim();
+
+    // Verificar si el campo está vacío
+    if (!link) {
+        resultadosDiv.innerHTML = 'Por favor, introduce un link.';
+        return;
+    }
+
+    // Verificar si el texto contiene un enlace válido
+    const regexLink = /(https?:\/\/[^\s]+)/gi; // Expresión regular para detectar enlaces
+    if (!regexLink.test(link)) {
+        resultadosDiv.innerHTML = 'Eso no es un link válido, o no se detectaron links en el texto ingresado.';
+        return;
+    }
+
+    // Intentar cargar los datos si el caché está vacío
+    if (dataCache.length === 0) {
+        dataCache = await obtenerDatos();
+    }
+
+    // Verificar si los datos aún están vacíos
+    if (dataCache.length === 0) {
+        resultadosDiv.innerHTML = 'Error al cargar los datos. Intenta nuevamente más tarde.';
+        return;
+    }
+
+    // Buscar coincidencias en los datos cargados
+    const coincidencias = buscarCoincidencias(link, dataCache);
+    if (coincidencias.length === 0) {
+        resultadosDiv.innerHTML = 'No se encontraron coincidencias.';
+        return;
+    }
+
+    // Mostrar coincidencias si las hay
+    resultadosDiv.innerHTML = 'Se encontraron coincidencias:';
+    coincidencias.forEach((coincidencia, index) => {
+        resultadosDiv.innerHTML += generarSugerencia(link, coincidencia, index, null, coincidencias.length);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
 
         let sugerenciasHTML = '';
         coincidencias.forEach((match, index) => {
@@ -480,6 +546,12 @@ document.addEventListener('DOMContentLoaded', () => {
            });
        });
    }
+
+
+
+
+
+
     
     // Función para copiar al portapapeles
    function copyToClipboard(text) {
@@ -523,6 +595,56 @@ const linkTitle = document.getElementById('linkTitle');
     });
 
 </script>
+
+
+
+
+
+
+
+
+<script>
+    // Variable para almacenar el tiempo de inactividad
+    let inactivityTimeout;
+
+    // Función para limpiar los campos
+    function limpiarCampos() {
+        const linkInput = document.getElementById('linkInput');
+        const resultadosDiv = document.getElementById('resultados');
+
+        // Limpiar el contenido del textarea y del div de resultados
+        linkInput.value = '';
+        resultadosDiv.innerHTML = '';
+        
+        console.log('Los campos han sido limpiados automáticamente.');
+    }
+
+    // Función para reiniciar el temporizador de inactividad
+    function resetInactivityTimer() {
+        // Si ya existe un temporizador de inactividad, lo limpiamos
+        if (inactivityTimeout) {
+            clearTimeout(inactivityTimeout);
+        }
+
+        // Establecemos un nuevo temporizador para limpiar los campos después de 2 minutos
+        inactivityTimeout = setTimeout(limpiarCampos, 20000); // 2 minutos
+    }
+
+    // Detectar actividad de entrada de texto o clic
+    document.getElementById('linkInput').addEventListener('input', resetInactivityTimer);
+    document.getElementById('generarButton').addEventListener('click', resetInactivityTimer);
+
+    // Inicializamos el temporizador de inactividad al cargar la página
+    resetInactivityTimer();
+</script>
+
+
+
+
+
+
+
+
 
 
 </html>
