@@ -366,13 +366,44 @@ document.addEventListener('DOMContentLoaded', () => {
         return '<p>No se encontraron tokens disponibles.</p>';
     }
 
-    const ridMatch = link.match(/(67[0-9a-fA-F-]+)/);
-    const rid = ridMatch ? ridMatch[1] : null;
 
-    if (!rid) {
-        return '<p>No se encontró un ID que empiece por 67 en el enlace.</p>';
-    }
 
+
+
+
+
+  // Extraer el RID del enlace
+  let rid = null;
+
+// Intentar extraer el RID como parámetro explícito
+const ridParamMatch = link.match(/[?&]RID=([67][0-9a-fA-F-]+)/);
+if (ridParamMatch) {
+    rid = ridParamMatch[1];
+} else {
+    // Si no hay un parámetro RID, buscar cualquier valor que comience con 67
+    const ridValueMatch = link.match(/(67[0-9a-fA-F-]+)/);
+    rid = ridValueMatch ? ridValueMatch[1] : null;
+}
+
+if (!rid) {
+    return '<p>No se encontró un ID que empiece por 67 en el enlace.</p>';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     // Intentar analizar la URL del template
     let templateURL, templateParams, paramOrder;
     try {
