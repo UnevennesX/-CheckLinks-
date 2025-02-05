@@ -1163,7 +1163,7 @@ Comentario: si paga
 
 ----------------
 Nombre: https://se.navigatorsurveys.com/
-URL: https://notch.insights.supply/cb?token=110b84a5-30f0-42f3-a242-1e05d5b0bc62&RID=xxxxxxxxxxxxxTAWHIDxxxxxxxxxxxxxx
+URL: https://notch.insights.supply/cb?token=110b84a5-30f0-42f3-a242-1e05d5b0bc62&RID=xxxxxxxxxxxxxxxx
 Tipo de Survey: Samplicious
 Fecha: 05, February, 2025. 08:47 PM
 Comentario: si paga
