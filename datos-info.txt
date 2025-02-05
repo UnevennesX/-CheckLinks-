@@ -1176,3 +1176,10 @@ Fecha: 05, February, 2025. 09:04 PM
 Comentario: Si paga!
 
 ----------------
+Nombre: https://www.escalentsurvey.co/
+URL: https://notch.insights.supply/cb?token=fc6e54d6-c138-4ea4-aaec-ec14e3907662&RID=xxxxxx
+Tipo de Survey: Samplicious
+Fecha: 05, February, 2025. 09:39 PM
+Comentario: si paga
+
+----------------
