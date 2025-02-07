@@ -1183,3 +1183,31 @@ Fecha: 05, February, 2025. 09:39 PM
 Comentario: si paga
 
 ----------------
+Nombre: https://survey.sightx.io/
+URL: https://notch.insights.supply/cb?token=d1cdad74-0c62-4cd1-b68b-9763d7c05f09&RID=
+Tipo de Survey: Samplicious
+Fecha: 06, February, 2025. 03:05 PM
+Comentario: si paga
+
+----------------
+Nombre: https://srvy.ninja/
+URL: https://notch.insights.supply/cb?RID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&token=abefaac8-c9da-418f-9c6b-8b2eb8305757
+Tipo de Survey: Samplicious
+Fecha: 07, February, 2025. 06:52 AM
+Comentario: si paga
+
+----------------
+Nombre: https://obsrvnow.com/
+URL: https://notch.insights.supply/cb?token=f55dfca5-98b4-4916-a022-6f96909dce69&rid=
+Tipo de Survey: Samplicious
+Fecha: 07, February, 2025. 07:04 AM
+Comentario: Si paga
+
+----------------
+Nombre: https://na.surveys.nielseniq.com/
+URL: https://notch.insights.supply/cb?token=2ce25004-17e6-427a-8706-b5dad133edfe&RID=xxxxxxxxxxx
+Tipo de Survey: Samplicious
+Fecha: 07, February, 2025. 02:19 PM
+Comentario: Si paga!
+
+----------------
