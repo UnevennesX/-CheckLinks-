@@ -331,7 +331,7 @@ Nombre: vault.questionlab
 URL: http://www.status/1.com
 Tipo de Survey: Internos
 Fecha: 20, August, 2024. 12:23 AM
-Comentario: Status=1 pagß
+Comentario: Status=1 pagÃŸ
 
 ----------------
 Nombre: amaieleven
@@ -548,7 +548,7 @@ Nombre: https://welcome.walr.com
 URL: http://www.corto.com
 Tipo de Survey: Spectrum
 Fecha: 05, September, 2024. 02:41 PM
-Comentario: Con el cort≤
+Comentario: Con el cortâ‰¤
 
 ----------------
 Nombre: http://Surveys.vitreousworld.com
@@ -674,13 +674,6 @@ Nombre: HTTPS://HKSTRATEGIESCANADA.QUALTRICS.COM/JFE/FORM/SV_88QM91FWM59MWPO
 URL: https://notch.insights.supply/cb?token=abd6da4f-802f-46ad-9f8c-1cda9a8e370b&RID=
 Tipo de Survey: Samplicious
 Fecha: 18, October, 2024. 09:07 PM
-Comentario: si paga
-
-----------------
-Nombre: HTTPS://LEGER.DECIPHERINC.COM/SURVEY/SELFSERVE/542/
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxxxxxx&CRID=xxxxxxxx&secret=765
-Tipo de Survey: Sample-cube
-Fecha: 23, October, 2024. 09:24 PM
 Comentario: si paga
 
 ----------------
@@ -1143,6 +1136,13 @@ Nombre: https://survey.jibunu.com/
 URL: https://notch.insights.supply/cb?token=c0336dc3-393d-48a0-b207-3830d0e412fa&RID=
 Tipo de Survey: Samplicious
 Fecha: 14, February, 2025. 08:09 PM
+Comentario: si paga
+
+----------------
+Nombre: https://survey.euro.confirmit.com/
+URL: https://notch.insights.supply/cb?token=4fbaea29-1484-4224-8548-45df016b555a&RID=
+Tipo de Survey: Samplicious
+Fecha: 17, February, 2025. 04:55 PM
 Comentario: si paga
 
 ----------------
