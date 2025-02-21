@@ -247,7 +247,7 @@ Nombre: vault.questionlab
 URL: http://www.status/1.com
 Tipo de Survey: Internos
 Fecha: 20, August, 2024. 12:23 AM
-Comentario: Status=1 pagß
+Comentario: Status=1 pagÃŸ
 
 ----------------
 Nombre: https://rl.sawtoothsoftware.com
@@ -436,7 +436,7 @@ Nombre: https://welcome.walr.com
 URL: http://www.corto.com
 Tipo de Survey: Spectrum
 Fecha: 05, September, 2024. 02:41 PM
-Comentario: Con el cort≤
+Comentario: Con el cortâ‰¤
 
 ----------------
 Nombre: http://Surveys.vitreousworld.com
@@ -1004,5 +1004,33 @@ URL: https://notch.insights.supply/cb?token=d920c970-3851-4045-8d98-b75b3e531eb3
 Tipo de Survey: Samplicious
 Fecha: 03, February, 2025. 09:52 PM
 Comentario: Si paga! link new
+
+----------------
+Nombre: https://survey.qualtrics.com/jfe/form/SV_1NPNuj3ZPVZqQLA
+URL: https://notch.insights.supply/cb?token=0d0dc9e7-9541-4365-b4b2-b9522e4a21a7&RID=
+Tipo de Survey: Samplicious
+Fecha: 21, February, 2025. 08:26 PM
+Comentario: si paga
+
+----------------
+Nombre: https://api.kyrios.online/#/screenersurvey/final?survey=DdZMRy0e
+URL: https://notch.insights.supply/cb/?token=a6bf1a16-9764-4cfc-b843-5dc0f0ba01ec&RID=
+Tipo de Survey: Samplicious
+Fecha: 21, February, 2025. 08:27 PM
+Comentario: si paga
+
+----------------
+Nombre: https://api.kyrios.online/
+URL: https://notch.insights.supply/cb/?token=a6bf1a16-9764-4cfc-b843-5dc0f0ba01ec&RID=
+Tipo de Survey: Samplicious
+Fecha: 21, February, 2025. 08:31 PM
+Comentario: si paga
+
+----------------
+Nombre: https://nexton.us/VT/MaskingUrl.aspx?SID=E9SNNSNB
+URL: https://notch.insights.supply/cb?token=179fcf48-11bb-4ffa-80ff-6887d7708862&RID=
+Tipo de Survey: Samplicious
+Fecha: 21, February, 2025. 08:26 PM
+Comentario: si paga
 
 ----------------
