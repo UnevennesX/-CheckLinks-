@@ -331,7 +331,7 @@ Nombre: vault.questionlab
 URL: http://www.status/1.com
 Tipo de Survey: Internos
 Fecha: 20, August, 2024. 12:23 AM
-Comentario: Status=1 pagÃŸ
+Comentario: Status=1 pagß
 
 ----------------
 Nombre: amaieleven
@@ -548,7 +548,7 @@ Nombre: https://welcome.walr.com
 URL: http://www.corto.com
 Tipo de Survey: Spectrum
 Fecha: 05, September, 2024. 02:41 PM
-Comentario: Con el cortâ‰¤
+Comentario: Con el cort≤
 
 ----------------
 Nombre: http://Surveys.vitreousworld.com
@@ -1158,5 +1158,12 @@ URL: https://notch.insights.supply/cb?token=1499653c-5310-4cb2-9042-514f6b114713
 Tipo de Survey: Samplicious
 Fecha: 20, February, 2025. 12:54 PM
 Comentario: Si paga!!
+
+----------------
+Nombre: https://thumbtack.co1.qualtrics.com/jfe/form/SV_02k7zTgymYGZ8rk
+URL: https://notch.insights.supply/cb/?token=f99ac081-1197-4de5-a4f4-9e642d074348&RID=xxx
+Tipo de Survey: Samplicious
+Fecha: 21, February, 2025. 12:14 AM
+Comentario: Si paga!
 
 ----------------
