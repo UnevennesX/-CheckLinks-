@@ -82,73 +82,10 @@ Fecha: 15, August, 2024. 04:17 PM
 Comentario: si paga
 
 ----------------
-Nombre: packagingh1.sawtoothsoftware
-URL: https://s.cint.com/Survey/Complete?ProjectToken=a3aa94d6-bb75-4a08-b681-f0db00ee078e
-Tipo de Survey: Cint
-Fecha: 15, August, 2024. 04:24 PM
-Comentario: SI PAGA : )
-
-----------------
 Nombre: se.navigatorsurveys
 URL: https://se.navigatorsurveys.com/api/survey/redirect?status=Complete&or1=
 Tipo de Survey: Internos
 Fecha: 15, August, 2024. 04:26 PM
-Comentario: si paga
-
-----------------
-Nombre: new.surveylion
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=23cc2566-0bc5-4d86-bc28-880e3153ad5a&secret=42950
-Tipo de Survey: Sample-cube
-Fecha: 15, August, 2024. 04:34 PM
-Comentario: si paga
-
-----------------
-Nombre: epitome-rs
-URL: https://surveys.sample-cube.com/ending?RS=1&secret=451&RID=8aceb278-9640-44aa-8479-ab2875045ef4&ids=
-Tipo de Survey: Sample-cube
-Fecha: 15, August, 2024. 04:35 PM
-Comentario: si paga
-
-----------------
-Nombre: survey.opinionationzone.com/survey/selfserve/53b
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=d1692915-614f-4c56-aeae-78d6c63641a2&secret=1421
-Tipo de Survey: Sample-cube
-Fecha: 15, August, 2024. 04:36 PM
-Comentario: si paga
-
-----------------
-Nombre: iqsn.de/cgi-bin
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=1db659f2-b423-4953-9e71-8666e54ad96e&secret=3644
-Tipo de Survey: Sample-cube
-Fecha: 15, August, 2024. 04:36 PM
-Comentario: si paga
-
-----------------
-Nombre: savanta.dotdata
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=74dd51b1-cf11-4130-bc45-94bb26ef754d&secret=32965
-Tipo de Survey: Sample-cube
-Fecha: 15, August, 2024. 04:37 PM
-Comentario: si paga
-
-----------------
-Nombre: globalresearchstudy
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=
-Tipo de Survey: Sample-cube
-Fecha: 15, August, 2024. 04:38 PM
-Comentario: si paga
-
-----------------
-Nombre: marketingresearchresources
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=4ab524cd-63e1-4944-b1ae-f8115b58eae8&secret=641
-Tipo de Survey: Sample-cube
-Fecha: 15, August, 2024. 04:39 PM
-Comentario: si paga
-
-----------------
-Nombre: survey.alchemer.com/s3/7687886
-URL: https://surveys.sample-cube.com/ending?RS=1&secret=510&RID=
-Tipo de Survey: Sample-cube
-Fecha: 15, August, 2024. 04:39 PM
 Comentario: si paga
 
 ----------------
@@ -222,25 +159,11 @@ Fecha: 15, August, 2024. 08:51 PM
 Comentario: tambien tiene interno
 
 ----------------
-Nombre: FM.MYOPINIONNOW.COM
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxxx&secret=293
-Tipo de Survey: Sample-cube
-Fecha: 15, August, 2024. 08:52 PM
-Comentario: N/A
-
-----------------
 Nombre: mrxsurveys
 URL: https://notch.insights.supply/cb?token=459944e1-fc53-41b1-a7e7-20ff53b97931&RID=
 Tipo de Survey: Samplicious
 Fecha: 15, August, 2024. 08:53 PM
 Comentario: N/A
-
-----------------
-Nombre: https://escalentsurvey.co
-URL: http://www.genera.com
-Tipo de Survey: Cint
-Fecha: 15, August, 2024. 10:19 PM
-Comentario: Se genera
 
 ----------------
 Nombre: https://pt.surveysavvy.com / www.survey.com
@@ -320,25 +243,11 @@ Fecha: 19, August, 2024. 09:58 PM
 Comentario: Se genera
 
 ----------------
-Nombre: snapchat.co1.qualtrics
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxxxx&secret=2995
-Tipo de Survey: Sample-cube
-Fecha: 19, August, 2024. 10:12 PM
-Comentario: SI PAGA : )
-
-----------------
 Nombre: vault.questionlab
 URL: http://www.status/1.com
 Tipo de Survey: Internos
 Fecha: 20, August, 2024. 12:23 AM
 Comentario: Status=1 pagß
-
-----------------
-Nombre: amaieleven
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxxxx-xxxxxxxxx-xxxxxxxxxx&secret=785
-Tipo de Survey: Sample-cube
-Fecha: 20, August, 2024. 03:40 AM
-Comentario: SI PAGA : )
 
 ----------------
 Nombre: https://rl.sawtoothsoftware.com
@@ -367,13 +276,6 @@ URL: https://ezio.link/redirect?eztype=C&ezkey=xxxxxxxxxxxxxxxxxxxxx&ezmode=1&ez
 Tipo de Survey: Internos
 Fecha: 21, August, 2024. 01:47 PM
 Comentario: si paga
-
-----------------
-Nombre: selfserve.decipherinc.com/survey/selfserve/20af/
-URL: http://www.generador.com
-Tipo de Survey: Cint
-Fecha: 22, August, 2024. 02:33 PM
-Comentario: Si paga
 
 ----------------
 Nombre: https://message.insight.rakuten.com/
@@ -432,25 +334,11 @@ Fecha: 24, August, 2024. 04:19 AM
 Comentario: Si paga
 
 ----------------
-Nombre: survey.alchemer.com/s3/7677163
-URL: https://surveys.sample-cube.com/ending?RS=1&secret=510&RID=
-Tipo de Survey: Sample-cube
-Fecha: 25, August, 2024. 08:19 AM
-Comentario: N/A
-
-----------------
 Nombre: surveys.marconline
 URL: https://research.roirocket.com/surveyresults.aspx?ss=d8a4d1&vid=
 Tipo de Survey: Spectrum
 Fecha: 25, August, 2024. 02:48 PM
 Comentario: Si paga. De research.roirocket a surveys.marconline
-
-----------------
-Nombre: selfserve 45bf 240801
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxxxxx&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmdi1zbXAiLCJpYXQiOjE3MjQ3NzU1MTQsInN1cnZleV9wYXRoIjoic2VsZnNlcnZlLzQ1YmYvMjQwODAxIiwiZG9tYWluIjoiaHR0cHM6Ly9zZWxmc2VydmUuZGVjaXBoZXJpbmMuY29tIn0.F35Xx3ZnP1Tudtr5SRFvpMvPLk8ObpgP67CLpFdWwjs
-Tipo de Survey: Sample-cube
-Fecha: 29, August, 2024. 02:38 PM
-Comentario: N/A
 
 ----------------
 Nombre: se.navigator
@@ -579,13 +467,6 @@ Fecha: 30, September, 2024. 03:50 PM
 Comentario: usar el corto. si paga
 
 ----------------
-Nombre: survey2.us.quantilope
-URL: https://surveys.sample-cube.com/ending?RS=1&secret=39380&RID=
-Tipo de Survey: Sample-cube
-Fecha: 30, September, 2024. 11:05 PM
-Comentario: Si paga
-
-----------------
 Nombre: surveys.harrisinsights.com/survey/selfserve/53b
 URL: https://notch.insights.supply/cb?token=ba4eca57-554f-4cd6-8f58-64ee45661e60&RID=
 Tipo de Survey: Samplicious
@@ -635,13 +516,6 @@ Fecha: 03, October, 2024. 10:08 PM
 Comentario: si paga
 
 ----------------
-Nombre: sur-tng.surveytng.com
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxx&secret=9078
-Tipo de Survey: Sample-cube
-Fecha: 03, October, 2024. 10:27 PM
-Comentario: si paga
-
-----------------
 Nombre: https://dig.ps-di.com
 URL: https://surveys.sample-cube.com/ending?RS=1&secret=367&RID=
 Tipo de Survey: Sample-cube
@@ -660,13 +534,6 @@ Nombre: https://platform.research-clever.com
 URL: https://notch.insights.supply/cb?token=3bc2059c-77e7-4a4a-bbfc-139429f371de&RID=
 Tipo de Survey: Samplicious
 Fecha: 04, October, 2024. 04:20 PM
-Comentario: si paga
-
-----------------
-Nombre: vxonline.luceresearch.com
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxx&secret=1081
-Tipo de Survey: Sample-cube
-Fecha: 04, October, 2024. 06:22 PM
 Comentario: si paga
 
 ----------------
@@ -712,13 +579,6 @@ Fecha: 11, November, 2024. 09:31 PM
 Comentario: Si paga
 
 ----------------
-Nombre: beasurveytake
-URL: https://s.cint.com/Survey/Complete?ProjectToken=53307d3a-a1ed-45b1-bc75-dfe0a538416b
-Tipo de Survey: Cint
-Fecha: 02, December, 2024. 03:51 PM
-Comentario: Si paga
-
-----------------
 Nombre: surveyengine.pureprofile
 URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=xxxxxxxxx&ps_hash=aG6L3WdY
 Tipo de Survey: Spectrum
@@ -740,24 +600,10 @@ Fecha: 11, December, 2024. 04:31 AM
 Comentario: Si paga
 
 ----------------
-Nombre: https://www.iqsn.de/L78/
-URL: https://s.cint.com/Survey/Complete?ProjectToken=9a60c404-d129-4883-8e73-4899af033fe2
-Tipo de Survey: Cint
-Fecha: 11, December, 2024. 01:48 PM
-Comentario: Si paga
-
-----------------
 Nombre: https://agatha.groupsolver.com
 URL: https://spectrumsurveys.com/surveydone?st=21&ps_hash=Ebf0ucSU&transaction_id=
 Tipo de Survey: Spectrum
 Fecha: 11, December, 2024. 10:08 PM
-Comentario: si paga
-
-----------------
-Nombre: HTTPS://ICION.DECISIONANALYST.COM/L/ENT/
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=
-Tipo de Survey: Sample-cube
-Fecha: 11, December, 2024. 11:40 PM
 Comentario: si paga
 
 ----------------
@@ -822,13 +668,6 @@ URL: https://notch.insights.supply/cb?token=47968ede-9aa3-4177-b870-5c845b3fe2a5
 Tipo de Survey: Samplicious
 Fecha: 19, December, 2024. 06:24 PM
 Comentario: si pago
-
-----------------
-Nombre: survey7.jdpoweronline.com
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxMAGNETxxx&secret=1531
-Tipo de Survey: Sample-cube
-Fecha: 28, December, 2024. 12:23 AM
-Comentario: si paga
 
 ----------------
 Nombre: https://bizpinionsurveys.com
@@ -1020,13 +859,6 @@ Fecha: 02, February, 2025. 03:06 PM
 Comentario: si paga!
 
 ----------------
-Nombre: https://conjointly.online/
-URL: https://notch.insights.supply/cb?token=3dc8a8de-b40b-481d-a0f6-976185db6cd8&RID=xxxxxxxxxxxxxx
-Tipo de Survey: Samplicious
-Fecha: 03, February, 2025. 09:52 PM
-Comentario: Si paga!
-
-----------------
 Nombre: https://globalresearchstudy.com/
 URL: https://notch.insights.supply/cb?token=dac7c77f-1c1e-48d4-8e20-5a7475352dbb&RID=xxxxxxxxxxxxxxxxxxxxxxxxxx
 Tipo de Survey: Samplicious
@@ -1165,5 +997,12 @@ URL: https://notch.insights.supply/cb/?token=f99ac081-1197-4de5-a4f4-9e642d07434
 Tipo de Survey: Samplicious
 Fecha: 21, February, 2025. 12:14 AM
 Comentario: Si paga!
+
+----------------
+Nombre: https://conjointly.online/
+URL: https://notch.insights.supply/cb?token=d920c970-3851-4045-8d98-b75b3e531eb3&RID=xxxx
+Tipo de Survey: Samplicious
+Fecha: 03, February, 2025. 09:52 PM
+Comentario: Si paga! link new
 
 ----------------
