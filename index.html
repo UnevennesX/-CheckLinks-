@@ -375,20 +375,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // Extraer el RID del enlace
   let rid = null;
 
-// Intentar extraer el RID como parámetro explícito
-const ridParamMatch = link.match(/[?&]RID=([67][0-9a-fA-F-]+)/);
-if (ridParamMatch) {
-    rid = ridParamMatch[1];
-} else {
-    // Si no hay un parámetro RID, buscar cualquier valor que comience con 67
-    const ridValueMatch = link.match(/(67[0-9a-fA-F-]+)/);
-    rid = ridValueMatch ? ridValueMatch[1] : null;
-}
+  // Expresión regular para buscar un RID que comience con "67" y tenga el formato deseado
+  const ridRegex = /(67[0-9a-fA-F]{2,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{12,})/i;  // La "i" hace la búsqueda insensible a mayúsculas. Ajusta las cantidades de digitos.
 
-if (!rid) {
-    return '<p>No se encontró un ID que empiece por 67 en el enlace.</p>';
-}
+  // Intentar extraer el RID como parámetro explícito
+  const ridParamMatch = link.match(/[?&]RID=(67[0-9a-fA-F-]+)/i);
+  if (ridParamMatch) {
+      rid = ridParamMatch[1];
+  } else {
+      // Si no hay un parámetro RID, buscar cualquier valor que coincida con el patrón
+      const ridValueMatch = link.match(ridRegex);
+      rid = ridValueMatch ? ridValueMatch[1] : null;
+  }
 
+  if (!rid) {
+      return '<p>No se encontró un ID que empiece por 67 con el formato esperado en el enlace.</p>';
+  }
 
 
 
