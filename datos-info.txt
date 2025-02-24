@@ -247,7 +247,7 @@ Nombre: vault.questionlab
 URL: http://www.status/1.com
 Tipo de Survey: Internos
 Fecha: 20, August, 2024. 12:23 AM
-Comentario: Status=1 pagß
+Comentario: Status=1 pagÃŸ
 
 ----------------
 Nombre: https://rl.sawtoothsoftware.com
@@ -436,7 +436,7 @@ Nombre: https://welcome.walr.com
 URL: http://www.corto.com
 Tipo de Survey: Spectrum
 Fecha: 05, September, 2024. 02:41 PM
-Comentario: Con el cort≤
+Comentario: Con el cortâ‰¤
 
 ----------------
 Nombre: http://Surveys.vitreousworld.com
@@ -1060,5 +1060,19 @@ URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxxxxxxxxxxxxxxxxxxxxxxxxx
 Tipo de Survey: Sample-cube
 Fecha: 23, February, 2025. 02:24 PM
 Comentario: Si paga
+
+----------------
+Nombre: https://tegnainc.questionpro.com/a
+URL: https://notch.insights.supply/cb?token=463a4519-dab3-4235-a885-e42e71fb7dcc&RID=
+Tipo de Survey: Samplicious
+Fecha: 23, February, 2025. 10:48 PM
+Comentario: Si paga
+
+----------------
+Nombre: https://surveys.sago.com/survey/selfserve/1819/g0db/
+URL: https://notch.insights.supply/cb?token=312ef1b8-f520-4c8e-b19f-57d47ded4a9d&RID=
+Tipo de Survey: Samplicious
+Fecha: 24, February, 2025. 02:18 PM
+Comentario: Si paga!
 
 ----------------
