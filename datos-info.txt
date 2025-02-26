@@ -796,13 +796,6 @@ Fecha: 29, January, 2025. 03:49 AM
 Comentario: si paga
 
 ----------------
-Nombre: https://sentry.cloudresearch.com/
-URL: https://notch.insights.supply/cb?token=9865411a-c2d5-45d8-9459-f3f830a2dfae&RID=
-Tipo de Survey: Samplicious
-Fecha: 30, January, 2025. 06:32 AM
-Comentario: si   paga
-
-----------------
 Nombre: https://us1se.voxco.com/
 URL: https://notch.insights.supply/cb?token=d9af61cb-78d3-401d-93c1-d2ce388a8cd4&RID=
 Tipo de Survey: Samplicious
@@ -1081,5 +1074,40 @@ URL: https://notch.insights.supply/cb?token=4ee2a4ba-3029-4cee-abc7-5d4dee677cdf
 Tipo de Survey: Samplicious
 Fecha: 24, February, 2025. 07:02 PM
 Comentario: si paga
+
+----------------
+Nombre: https://knowledgeuniverse.co1.qualtrics.com/
+URL: https://notch.insights.supply/cb?token=f8bbc072-ea67-44fb-8833-ea0512ee4cda&RID=
+Tipo de Survey: Samplicious
+Fecha: 25, February, 2025. 03:13 PM
+Comentario: si paga
+
+----------------
+Nombre: survey.cmix.com
+URL: https://notch.insights.supply/cb?token=e0d114fd-2705-40d6-8097-659b8e81520e&RID=
+Tipo de Survey: Samplicious
+Fecha: 26, February, 2025. 01:13 AM
+Comentario: si paga
+
+----------------
+Nombre: https://survey.az1.qualtrics.com/
+URL: https://notch.insights.supply/cb?token=703ab600-551f-45c2-a4b0-eea7890f79c7&RID=
+Tipo de Survey: Samplicious
+Fecha: 26, February, 2025. 04:33 AM
+Comentario: si paga
+
+----------------
+Nombre: https://pymnts.iad1.qualtrics.com/jfe/form/SV_6eY86aCI6Pv5yx8
+URL: https://notch.insights.supply/cb?token=dc9619e8-0847-4f12-8fc5-8acca3074572&RID=
+Tipo de Survey: Samplicious
+Fecha: 26, February, 2025. 12:48 PM
+Comentario: Si paga!
+
+----------------
+Nombre: https://www.net-research.com/
+URL: https://s.cint.com/Survey/Complete?ProjectToken=c0a68e26-15c8-4ec7-a979-009c2e7f4676
+Tipo de Survey: Cint
+Fecha: 26, February, 2025. 02:43 PM
+Comentario: Si paga!
 
 ----------------
