@@ -726,13 +726,6 @@ Fecha: 19, January, 2025. 12:15 PM
 Comentario: Si paga!
 
 ----------------
-Nombre: WWW.ESCALENTSURVEY.CO/START.ASPX?P=V240313NP_12
-URL: https://notch.insights.supply/cb?token=fc6e54d6-c138-4ea4-aaec-ec14e3907662&RID=
-Tipo de Survey: Samplicious
-Fecha: 19, January, 2025. 02:08 PM
-Comentario: PROBAR
-
-----------------
 Nombre: https://survey-response.useglass.com
 URL: https://notch.insights.supply/cb?token=a29ae3ef-4439-49d7-89df-9d9dacb63878&RID=
 Tipo de Survey: Samplicious
@@ -1109,5 +1102,19 @@ URL: https://s.cint.com/Survey/Complete?ProjectToken=c0a68e26-15c8-4ec7-a979-009
 Tipo de Survey: Cint
 Fecha: 26, February, 2025. 02:43 PM
 Comentario: Si paga!
+
+----------------
+Nombre: https://conversations.streetbees.com/
+URL: https://notch.insights.supply/cb?RID=xxxxxxxxxxxxxxxxxxxxxxxxx&token=8d487803-0bc9-43b9-b614-4438a2b7c7c9
+Tipo de Survey: Samplicious
+Fecha: 27, February, 2025. 02:46 AM
+Comentario: si paga
+
+----------------
+Nombre: https://se.navigatorsurveys.com/
+URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxxxxxxxxxxxxxxxxxxxxxxxxx&secret=1692
+Tipo de Survey: Sample-cube
+Fecha: 27, February, 2025. 07:03 AM
+Comentario: si paga
 
 ----------------
