@@ -1118,3 +1118,17 @@ Fecha: 27, February, 2025. 07:03 AM
 Comentario: si paga
 
 ----------------
+Nombre: https://wiserinsights.surveyanalytics.com/
+URL: https://notch.insights.supply/cb?token=6c5b1d21-5a37-418a-b1e8-134d8655805b&RID=
+Tipo de Survey: Samplicious
+Fecha: 27, February, 2025. 09:18 PM
+Comentario: Si paga
+
+----------------
+Nombre: https://router.testamericaonline.com/
+URL: https://notch.insights.supply/cb?token=fcedaa91-d972-4ac0-bf62-1188a7f432eb&RID=
+Tipo de Survey: Samplicious
+Fecha: 28, February, 2025. 12:19 AM
+Comentario: si paga
+
+----------------
