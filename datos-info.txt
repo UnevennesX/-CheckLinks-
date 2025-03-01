@@ -1133,7 +1133,7 @@ Comentario: si paga
 
 ----------------
 Nombre: https://www.ksr-survey.com/
-URL: https://survey.dashmr.com/callback?status=Complete&spid=
+URL: https://survey.dashmr.com/callback?status=Complete&spid=xxx
 Tipo de Survey: Survey.Dashmr
 Fecha: 01, March, 2025. 04:15 PM
 Comentario: si paga
