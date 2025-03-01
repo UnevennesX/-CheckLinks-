@@ -1132,7 +1132,7 @@ Fecha: 28, February, 2025. 12:19 AM
 Comentario: si paga
 
 ----------------
-Nombre: https://www.ksr-survey.com/
+Nombre: https://www.ksr-survey.com/wix/
 URL: https://survey.dashmr.com/callback?status=Complete&spid=xxx
 Tipo de Survey: Survey.Dashmr
 Fecha: 01, March, 2025. 04:15 PM
