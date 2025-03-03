@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALL SAMPLICIOUS</title>
     <link rel="icon" type="image/png" href="https://cdn.dribbble.com/users/7549673/screenshots/17206704/media/1210a9d0ec8af427967e735935861eeb.png?resize=400x300&vertical=center" />
-    
+
 <style>
 
 body {
@@ -178,9 +178,15 @@ button:hover {
    margin-top: 5px
   }
 
+#ohnoVideo {
+    display: none; /* Oculto por defecto */
+    margin-top: 20px;
+}
 
-
-
+#ohnoVideo video {
+    width: 100%;
+    max-width: 500px; /* Ajusta el tamaño máximo del video */
+}
 
 
 /* Estilos del modal */
@@ -194,7 +200,7 @@ button:hover {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
-   
+
 }
 
 .modal-content {
@@ -230,7 +236,7 @@ h1 {
     transition: color 0.3s ease;
     cursor: pointer;
 }
-    
+
 
 
 .linkpagina {
@@ -256,6 +262,9 @@ h1 {
         <textarea id="linkInput" placeholder="Paste your link here"></textarea>
         <button id="generarButton">Generate Link</button><br><br>
         <div id="resultados"></div>
+        <div id="ohnoVideo">
+            <video id="ohnoVideoElement" src="https://github.com/UnevennesX/-CheckLinks-/blob/main/ohno.mp4?raw=true" controls muted></video>
+        </div>
     </div>
 
 
@@ -270,7 +279,6 @@ h1 {
     </div>
 
 
-    
 </body>
 
 <script>
@@ -279,8 +287,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkInput = document.getElementById('linkInput');
     const generarButton = document.getElementById('generarButton');
     const resultadosDiv = document.getElementById('resultados');
+    const ohnoVideoDiv = document.getElementById('ohnoVideo');
+    const ohnoVideoElement = document.getElementById('ohnoVideoElement');
     const datosURL = 'https://raw.githubusercontent.com/UnevennesX/-CheckLinks-/main/datos-info.txt';
     let dataCache = [];
+    let videoPlayed = false;
 
     // Función para obtener los datos del archivo TXT
     async function obtenerDatos() {
@@ -312,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             return entryData;
         }).filter(entry => entry['Tipo de Survey'] === 'Samplicious');
-     
+
     return parsedData
     }
 
@@ -331,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const matches = data.filter(item => {
             const nombre = item.Nombre.toLowerCase();
              const isMatch = searchTerms.some(term => nombre.includes(term.toLowerCase()));
-           
+
               if(isMatch){
                 if(searchTerms.some(term => nombre === term.toLowerCase())){
                      exactMatch = item
@@ -405,7 +416,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    
     // Intentar analizar la URL del template
     let templateURL, templateParams, paramOrder;
     try {
@@ -490,40 +500,64 @@ document.addEventListener('DOMContentLoaded', () => {
 
    async function generarLinks() {
     resultadosDiv.innerHTML = 'Cargando...';
+    ohnoVideoDiv.style.display = 'none';
     const link = linkInput.value.trim();
 
-    // Verificar si el campo está vacío
     if (!link) {
         resultadosDiv.innerHTML = 'Por favor, introduce un link.';
         return;
     }
 
-    // Verificar si el texto contiene un enlace válido
-    const regexLink = /(https?:\/\/[^\s]+)/gi; // Expresión regular para detectar enlaces
+    const regexLink = /(https?:\/\/[^\s]+)/gi;
     if (!regexLink.test(link)) {
         resultadosDiv.innerHTML = 'Eso no es un link válido, o no se detectaron links en el texto ingresado.';
         return;
     }
 
-    // Intentar cargar los datos si el caché está vacío
     if (dataCache.length === 0) {
         dataCache = await obtenerDatos();
     }
 
-    // Verificar si los datos aún están vacíos
     if (dataCache.length === 0) {
         resultadosDiv.innerHTML = 'Error al cargar los datos. Intenta nuevamente más tarde.';
         return;
     }
 
-    // Buscar coincidencias en los datos cargados
     const coincidencias = buscarCoincidencias(link, dataCache);
     if (coincidencias.length === 0) {
         resultadosDiv.innerHTML = 'No se encontraron coincidencias.';
+        ohnoVideoDiv.style.display = 'block';
+
+        // Reproducir el video solo una vez
+        if (!videoPlayed) {
+          ohnoVideoElement.muted = false;
+            ohnoVideoElement.volume = 1;
+
+            const playPromise = ohnoVideoElement.play();
+
+            if (playPromise !== undefined) {
+              playPromise.then(() => {
+                // Automatic playback started!
+              })
+              .catch(error => {
+                // Auto-play was prevented
+                console.error("Autoplay prevented:", error);
+                ohnoVideoElement.controls = true; // Show controls if autoplay fails
+              });
+            }
+
+            videoPlayed = true;
+
+            // Remove the loop attribute to prevent looping
+            ohnoVideoElement.removeAttribute("loop");
+        }
+
         return;
     }
 
-    // Mostrar coincidencias si las hay
+    // Si se encontraron coincidencias, resetear videoPlayed
+    videoPlayed = false;
+
     resultadosDiv.innerHTML = 'Se encontraron coincidencias:';
     coincidencias.forEach((coincidencia, index) => {
         resultadosDiv.innerHTML += generarSugerencia(link, coincidencia, index, null, coincidencias.length);
@@ -585,7 +619,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    
     // Función para copiar al portapapeles
    function copyToClipboard(text) {
       navigator.clipboard.writeText(text)
@@ -606,7 +639,7 @@ const linkTitle = document.getElementById('linkTitle');
     const infoModal = document.getElementById('infoModal');
     const closeModalButton = document.getElementById('closeModal');
      const linkpagina = document.querySelector('.linkpagina');
-    
+
     linkTitle.addEventListener('click', () => {
          infoModal.style.display = 'block';
     });
@@ -614,13 +647,13 @@ const linkTitle = document.getElementById('linkTitle');
     closeModalButton.addEventListener('click', () => {
         infoModal.style.display = 'none';
     });
-    
+
    window.addEventListener('click', (event) => {
         if (event.target === infoModal) {
              infoModal.style.display = 'none';
         }
    });
-  
+
     linkpagina.addEventListener('click', () => {
         const url = linkpagina.getAttribute('data-url');
         window.open(url, '_blank');
@@ -648,7 +681,7 @@ const linkTitle = document.getElementById('linkTitle');
         // Limpiar el contenido del textarea y del div de resultados
         linkInput.value = '';
         resultadosDiv.innerHTML = '';
-        
+
         console.log('Los campos han sido limpiados automáticamente.');
     }
 
