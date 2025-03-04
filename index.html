@@ -178,16 +178,10 @@ button:hover {
    margin-top: 5px
   }
 
-#ohnoVideo {
-    display: none; /* Oculto por defecto */
-    margin-top: 20px;
-}
 
-#ohnoVideo video {
-    width: 100%; /* Ocupa el 100% del contenedor */
-    max-width: 200px; /* Establece un ancho máximo de 200px */
-    height: auto; /* Mantiene la proporción del video */
-}
+
+
+
 
 /* Estilos del modal */
 .modal {
@@ -262,9 +256,6 @@ h1 {
         <textarea id="linkInput" placeholder="Paste your link here"></textarea>
         <button id="generarButton">Generate Link</button><br><br>
         <div id="resultados"></div>
-        <div id="ohnoVideo">
-            <video id="ohnoVideoElement" src="https://github.com/UnevennesX/-CheckLinks-/blob/main/ohno.mp4?raw=true" controls muted></video>
-        </div>
     </div>
 
 
@@ -279,6 +270,7 @@ h1 {
     </div>
 
 
+
 </body>
 
 <script>
@@ -287,11 +279,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkInput = document.getElementById('linkInput');
     const generarButton = document.getElementById('generarButton');
     const resultadosDiv = document.getElementById('resultados');
-    const ohnoVideoDiv = document.getElementById('ohnoVideo');
-    const ohnoVideoElement = document.getElementById('ohnoVideoElement');
     const datosURL = 'https://raw.githubusercontent.com/UnevennesX/-CheckLinks-/main/datos-info.txt';
     let dataCache = [];
-    let videoPlayed = false;
 
     // Función para obtener los datos del archivo TXT
     async function obtenerDatos() {
@@ -386,6 +375,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // Extraer el RID del enlace
   let rid = null;
 
+// Intentar extraer el RID como parámetro explícito
+const ridParamMatch = link.match(/[?&]RID=([67][0-9a-fA-F-]+)/);
+if (ridParamMatch) {
+    rid = ridParamMatch[1];
+} else {
+    // Si no hay un parámetro RID, buscar cualquier valor que comience con 67
+    const ridValueMatch = link.match(/(67[0-9a-fA-F-]+)/);
+    rid = ridValueMatch ? ridValueMatch[1] : null;
+}
+
+if (!rid) {
+    return '<p>No se encontró un ID que empiece por 67 en el enlace.</p>';
+}
   // Expresión regular para buscar un RID que comience con "67" y tenga el formato deseado
   const ridRegex = /(67[0-9a-fA-F]{2,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{12,})/i;  // La "i" hace la búsqueda insensible a mayúsculas. Ajusta las cantidades de digitos.
 
@@ -402,6 +404,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!rid) {
       return '<p>No se encontró un ID que empiece por 67 con el formato esperado en el enlace.</p>';
   }
+
 
 
 
@@ -476,8 +479,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    
-    
+
+
   function generarOpcionesToken(url){
         const urlParams = new URL(url).searchParams
       const tokenParam = urlParams.get('token')
@@ -500,64 +503,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
    async function generarLinks() {
     resultadosDiv.innerHTML = 'Cargando...';
-    ohnoVideoDiv.style.display = 'none';
     const link = linkInput.value.trim();
 
+    // Verificar si el campo está vacío
     if (!link) {
         resultadosDiv.innerHTML = 'Por favor, introduce un link.';
         return;
     }
 
-    const regexLink = /(https?:\/\/[^\s]+)/gi;
+    // Verificar si el texto contiene un enlace válido
+    const regexLink = /(https?:\/\/[^\s]+)/gi; // Expresión regular para detectar enlaces
     if (!regexLink.test(link)) {
         resultadosDiv.innerHTML = 'Eso no es un link válido, o no se detectaron links en el texto ingresado.';
         return;
     }
 
+    // Intentar cargar los datos si el caché está vacío
     if (dataCache.length === 0) {
         dataCache = await obtenerDatos();
     }
 
+    // Verificar si los datos aún están vacíos
     if (dataCache.length === 0) {
         resultadosDiv.innerHTML = 'Error al cargar los datos. Intenta nuevamente más tarde.';
         return;
     }
 
+    // Buscar coincidencias en los datos cargados
     const coincidencias = buscarCoincidencias(link, dataCache);
     if (coincidencias.length === 0) {
         resultadosDiv.innerHTML = 'No se encontraron coincidencias.';
-        ohnoVideoDiv.style.display = 'block';
-
-        // Reproducir el video solo una vez
-        if (!videoPlayed) {
-          ohnoVideoElement.muted = false;
-            ohnoVideoElement.volume = 1;
-
-            const playPromise = ohnoVideoElement.play();
-
-            if (playPromise !== undefined) {
-              playPromise.then(() => {
-                // Automatic playback started!
-              })
-              .catch(error => {
-                // Auto-play was prevented
-                console.error("Autoplay prevented:", error);
-                ohnoVideoElement.controls = true; // Show controls if autoplay fails
-              });
-            }
-
-            videoPlayed = true;
-
-            // Remove the loop attribute to prevent looping
-            ohnoVideoElement.removeAttribute("loop");
-        }
-
         return;
     }
 
-    // Si se encontraron coincidencias, resetear videoPlayed
-    videoPlayed = false;
-
+    // Mostrar coincidencias si las hay
     resultadosDiv.innerHTML = 'Se encontraron coincidencias:';
     coincidencias.forEach((coincidencia, index) => {
         resultadosDiv.innerHTML += generarSugerencia(link, coincidencia, index, null, coincidencias.length);
@@ -613,6 +592,7 @@ document.addEventListener('DOMContentLoaded', () => {
            });
        });
    }
+
 
 
 
