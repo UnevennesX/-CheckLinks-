@@ -2,480 +2,465 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0">
     <title>ALL SAMPLICIOUS</title>
     <link rel="icon" type="image/png" href="https://cdn.dribbble.com/users/7549673/screenshots/17206704/media/1210a9d0ec8af427967e735935861eeb.png?resize=400x300&vertical=center" />
 
-<style>
+    <style>
 
-body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #111;
-    color: #ddd;
-    overflow: auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #111;
+            color: #ddd;
+            overflow: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
-.background-gradient {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-       background: radial-gradient(ellipse at center, #1a1a1a 0%, #111111 100%);
-    z-index: 0;
-    opacity: 1;
-}
+        .background-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, #1a1a1a 0%, #111111 100%);
+            z-index: 0;
+            opacity: 1;
+        }
 
-.container {
-    background: rgba(30, 30, 30, 0.9);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
-    width: 550px;
-    max-width: 95%;
-    text-align: center;
-    z-index: 1;
-    backdrop-filter: blur(10px);
-}
+        .container {
+            background: rgba(30, 30, 30, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+            width: 550px;
+            max-width: 95%;
+            text-align: center;
+            z-index: 1;
+            backdrop-filter: blur(10px);
+        }
 
-h1 {
-    margin-bottom: 25px;
-    color: #bbb; /* Título gris claro */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
+        h1 {
+            margin-bottom: 25px;
+            color: #bbb; /* Título gris claro */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
 
-h1:hover {
-    color: #ff4081;
-}
+        h1:hover {
+            color: #ff4081;
+        }
 
-textarea {
-    width: calc(100% - 20px);
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 2px solid #555; /* Borde gris */
-    border-radius: 8px;
-    font-size: 1rem;
-    resize: vertical;
-    background-color: #222;
-    color: #eee;
-     transition: border-color 0.3s ease;
-}
+        textarea {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #555; /* Borde gris */
+            border-radius: 8px;
+            font-size: 1rem;
+            resize: vertical;
+            background-color: #222;
+            color: #eee;
+            transition: border-color 0.3s ease;
+        }
 
-textarea:focus {
-    outline: none;
-     border-color: #bbb;
-}
-
-
-button {
-    padding: 12px 25px;
-    background-color: #9e9e9e; /* Botón gris */
-    color: #111;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
+        textarea:focus {
+            outline: none;
+            border-color: #bbb;
+        }
 
 
-button:hover {
-    background-color: #757575; /* Botón gris oscuro al pasar el mouse */
-    transform: scale(1.05);
-}
+        button {
+            padding: 12px 25px;
+            background-color: #9e9e9e; /* Botón gris */
+            color: #111;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
 
 
-#resultados {
-    margin-top: 25px;
-    text-align: left;
-    overflow-wrap: break-word;
-}
+        button:hover {
+            background-color: #757575; /* Botón gris oscuro al pasar el mouse */
+            transform: scale(1.05);
+        }
 
 
-.sugerencia {
-    border: 1px solid #444;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    background-color: #222;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.sugerencia:hover {
-    transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
-}
-
-.sugerencia h3 {
-    margin-top: 0;
-    color: #ddd;
-    margin-bottom: 10px;
-     font-weight: 600;
-}
-
-.sugerencia p {
-    margin-bottom: 8px;
-    color: #ddd;
-}
-
-.sugerencia strong {
-    color: #bbb;
-      font-weight: 600;
-}
-
-.sugerencia a {
-    color: #bbb;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    word-break: break-all;
-}
-
-.sugerencia a:hover {
-    color: #eee;
-}
-
-.sugerencia .opciones-token {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-      margin-bottom: 10px;
-}
+        #resultados {
+            margin-top: 25px;
+            text-align: left;
+            overflow-wrap: break-word;
+        }
 
 
-.sugerencia .opcion-token {
-     background-color: #333;
-    padding: 8px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+        .sugerencia {
+            border: 1px solid #444;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            background-color: #222;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .sugerencia:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+        }
+
+        .sugerencia h3 {
+            margin-top: 0;
+            color: #ddd;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .sugerencia p {
+            margin-bottom: 8px;
+            color: #ddd;
+        }
+
+        .sugerencia strong {
+            color: #bbb;
+            font-weight: 600;
+        }
+
+        .sugerencia a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            word-break: break-all;
+        }
+
+        .sugerencia a:hover {
+            color: #eee;
+        }
+
+        .sugerencia .opciones-token {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
 
 
-.sugerencia .opcion-token:hover {
-    background-color: #444;
-}
-
-.sugerencia .seleccionado {
-    background-color: #9e9e9e;
-     color: #111;
-}
-
-.sugerencia p:last-of-type {
-   margin-top: 5px
-  }
-
-#ohnoVideo {
-    display: none; /* Oculto por defecto */
-    margin-top: 20px;
-}
-
-#ohnoVideo video {
-    width: 100%; /* Ocupa el 100% del contenedor */
-    max-width: 200px; /* Establece un ancho máximo de 200px */
-    height: auto; /* Mantiene la proporción del video */
-}
-
-/* Estilos del modal */
-.modal {
-  display: none; /* Oculto por defecto */
-  position: fixed;
-  z-index: 10;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
-
-}
-
-.modal-content {
-  background-color: #222;
-  margin: 15% auto;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 500px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    position: relative; /* Necesario para el posicionamiento del botón de cierre */
-}
-
-.close-button {
-    position: absolute;
-     top: 10px;
-    right: 15px;
-    font-size: 30px;
-    font-weight: bold;
-     cursor: pointer;
-     color:#bbb;
-}
-.close-button:hover {
-   color: #ddd;
-}
-
-h1 {
-    margin-bottom: 25px;
-    color: #bbb;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-    transition: color 0.3s ease;
-    cursor: pointer;
-}
+        .sugerencia .opcion-token {
+            background-color: #333;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
 
+        .sugerencia .opcion-token:hover {
+            background-color: #444;
+        }
 
-.linkpagina {
-    color: #ff4081;
-      cursor: pointer;
-        transition: color 0.3s ease;
-}
+        .sugerencia .seleccionado {
+            background-color: #9e9e9e;
+            color: #111;
+        }
 
-.linkpagina:hover {
-  color: #b82b82;
-}
+        .sugerencia p:last-of-type {
+            margin-top: 5px
+        }
 
-</style>
+        #ohnoVideo {
+            display: none; /* Oculto por defecto */
+            margin-top: 20px;
+        }
+
+        #ohnoVideo video {
+            width: 100%; /* Ocupa el 100% del contenedor */
+            max-width: 200px; /* Establece un ancho máximo de 200px */
+            height: auto; /* Mantiene la proporción del video */
+        }
+
+        /* Estilos del modal */
+        .modal {
+            display: none; /* Oculto por defecto */
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
+
+        }
+
+        .modal-content {
+            background-color: #222;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            position: relative; /* Necesario para el posicionamiento del botón de cierre */
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #bbb;
+        }
+
+        .close-button:hover {
+            color: #ddd;
+        }
+
+        h1 {
+            margin-bottom: 25px;
+            color: #bbb;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+
+        .linkpagina {
+            color: #ff4081;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .linkpagina:hover {
+            color: #b82b82;
+        }
+
+    </style>
 
 
 </head>
 
 <body>
-    <div class="stars"></div>
-    <div class="twinkling"></div>
-    <div class="container">
-        <h1 id="linkTitle" >ALL SAMPLICIOUS</h1>
-        <textarea id="linkInput" placeholder="Paste your link here"></textarea>
-        <button id="generarButton">Generate Link</button><br><br>
-        <div id="resultados"></div>
-        <div id="ohnoVideo">
-            <video id="ohnoVideoElement" src="https://github.com/UnevennesX/-CheckLinks-/blob/main/ohno.mp4?raw=true" controls muted></video>
-        </div>
+<div class="stars"></div>
+<div class="twinkling"></div>
+<div class="container">
+    <h1 id="linkTitle">ALL SAMPLICIOUS</h1>
+    <textarea id="linkInput" placeholder="Paste your link here"></textarea>
+    <button id="generarButton">Generate Link</button><br><br>
+    <div id="resultados"></div>
+    <div id="ohnoVideo">
+        <video id="ohnoVideoElement" src="https://github.com/UnevennesX/-CheckLinks-/blob/main/ohno.mp4?raw=true"
+               controls muted></video>
     </div>
+</div>
 
 
-    <div class="modal" id="infoModal">
-        <div class="modal-content">
-            <span class="close-button" id="closeModal">×</span>
-            <h2>Información</h2>
-            <p>Este es un generador de links creado por UnevennesX. <br><br>Esta basado en el .TXT que genera mi pagina como respado.</p>
-            <h1 class="linkpagina"  data-url="https://mi-pg.vercel.app/login/">UnevennesX</h1>
+<div class="modal" id="infoModal">
+    <div class="modal-content">
+        <span class="close-button" id="closeModal">×</span>
+        <h2>Información</h2>
+        <p>Este es un generador de links creado por UnevennesX. <br><br>Esta basado en el .TXT que genera mi pagina
+            como respado.</p>
+        <h1 class="linkpagina" data-url="https://mi-pg.vercel.app/login/">UnevennesX</h1>
 
-        </div>
     </div>
+</div>
 
-    <audio id="sugerenciaAudio" src="https://raw.githubusercontent.com/UnevennesX/-CheckLinks-/main/sugerencia.mp3" preload="auto"></audio>
+<audio id="sugerenciaAudio" src="https://raw.githubusercontent.com/UnevennesX/-CheckLinks-/main/sugerencia.mp3"
+       preload="auto"></audio>
 
 
 </body>
 
 <script>
 
-document.addEventListener('DOMContentLoaded', () => {
-    const linkInput = document.getElementById('linkInput');
-    const generarButton = document.getElementById('generarButton');
-    const resultadosDiv = document.getElementById('resultados');
-    const ohnoVideoDiv = document.getElementById('ohnoVideo');
-    const ohnoVideoElement = document.getElementById('ohnoVideoElement');
-    const datosURL = 'https://raw.githubusercontent.com/UnevennesX/-CheckLinks-/main/datos-info.txt';
-    const sugerenciaAudio = document.getElementById('sugerenciaAudio');
-    let dataCache = [];
-    let videoPlayed = false;
+    document.addEventListener('DOMContentLoaded', () => {
+        const linkInput = document.getElementById('linkInput');
+        const generarButton = document.getElementById('generarButton');
+        const resultadosDiv = document.getElementById('resultados');
+        const ohnoVideoDiv = document.getElementById('ohnoVideo');
+        const ohnoVideoElement = document.getElementById('ohnoVideoElement');
+        const datosURL = 'https://raw.githubusercontent.com/UnevennesX/-CheckLinks-/main/datos-info.txt';
+        const sugerenciaAudio = document.getElementById('sugerenciaAudio');  // Keep audio reference
+        let dataCache = [];
+        let videoPlayed = false;
+        let idNotFoundErrorShown = false; // Flag to track if the ID not found message was already shown.
 
-    // Función para reproducir el audio
-    function playSugerenciaAudio() {
-        sugerenciaAudio.play()
-            .then(() => {
-                console.log("Audio reproducido correctamente.");
-            })
-            .catch(error => {
-                console.error("Error al reproducir el audio:", error);
-                if (error.name === 'NotAllowedError') {
-                    console.warn("La reproducción automática está bloqueada por el navegador. El usuario debe interactuar primero.");
+        // Función para reproducir el audio
+        function playSugerenciaAudio() {
+            sugerenciaAudio.play()
+                .then(() => {
+                    console.log("Audio reproducido correctamente.");
+                })
+                .catch(error => {
+                    console.error("Error al reproducir el audio:", error);
+                    if (error.name === 'NotAllowedError') {
+                        console.warn("La reproducción automática está bloqueada por el navegador. El usuario debe interactuar primero.");
+                    }
+                });
+        }
+
+        // Función para obtener los datos del archivo TXT
+        async function obtenerDatos() {
+            try {
+                const response = await fetch(datosURL);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
-            });
-    }
-
-    // Función para obtener los datos del archivo TXT
-    async function obtenerDatos() {
-        try {
-            const response = await fetch(datosURL);
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                const data = await response.text();
+                return parseData(data);
+            } catch (error) {
+                console.error('Error al obtener los datos:', error);
+                resultadosDiv.innerHTML = 'Error al cargar los datos.';
+                return [];
             }
-            const data = await response.text();
-            return parseData(data);
-        } catch (error) {
-            console.error('Error al obtener los datos:', error);
-            resultadosDiv.innerHTML = 'Error al cargar los datos.';
-            return [];
         }
-    }
 
-  // Función para parsear los datos del TXT
-  function parseData(data) {
-        const entries = data.split('----------------').filter(Boolean);
-        const parsedData = entries.map(entry => {
-            const lines = entry.trim().split('\n');
-            const entryData = {};
-            lines.forEach(line => {
-                const [key, value] = line.split(': ').map(s => s.trim());
-                if (key && value) {
-                    entryData[key] = value;
+        // Función para parsear los datos del TXT
+        function parseData(data) {
+            const entries = data.split('----------------').filter(Boolean);
+            const parsedData = entries.map(entry => {
+                const lines = entry.trim().split('\n');
+                const entryData = {};
+                lines.forEach(line => {
+                    const [key, value] = line.split(': ').map(s => s.trim());
+                    if (key && value) {
+                        entryData[key] = value;
+                    }
+                });
+                return entryData;
+            }).filter(entry => entry['Tipo de Survey'] === 'Samplicious');
+
+            return parsedData
+        }
+
+        // Función para buscar coincidencias y priorizar la mejor
+        function buscarCoincidencias(link, data) {
+            const url = new URL(link.startsWith('http') ? link : `https://${link}`);
+            const hostname = url.hostname;
+            const domain = hostname.replace(/^www\./, '');
+            const searchTerms = [
+                hostname,
+                domain,
+                domain.replace(/^www\./, ''),
+            ];
+
+            let exactMatch = null
+            const matches = data.filter(item => {
+                const nombre = item.Nombre.toLowerCase();
+                const isMatch = searchTerms.some(term => nombre.includes(term.toLowerCase()));
+
+                if (isMatch) {
+                    if (searchTerms.some(term => nombre === term.toLowerCase())) {
+                        exactMatch = item
+                    }
                 }
+                return isMatch
             });
-            return entryData;
-        }).filter(entry => entry['Tipo de Survey'] === 'Samplicious');
 
-    return parsedData
-    }
-
-    // Función para buscar coincidencias y priorizar la mejor
-    function buscarCoincidencias(link, data) {
-        const url = new URL(link.startsWith('http') ? link : `https://${link}`);
-        const hostname = url.hostname;
-        const domain = hostname.replace(/^www\./, '');
-         const searchTerms = [
-             hostname,
-            domain,
-             domain.replace(/^www\./, ''),
-        ];
-
-        let exactMatch = null
-          const matches = data.filter(item => {
-            const nombre = item.Nombre.toLowerCase();
-             const isMatch = searchTerms.some(term => nombre.includes(term.toLowerCase()));
-
-              if(isMatch){
-                if(searchTerms.some(term => nombre === term.toLowerCase())){
-                     exactMatch = item
-                }
-             }
-            return isMatch
-        });
-
-           if (exactMatch && matches.length > 1 ) {
-             return [exactMatch, ...matches.filter(match => match !== exactMatch)];
+            if (exactMatch && matches.length > 1) {
+                return [exactMatch, ...matches.filter(match => match !== exactMatch)];
             }
-        return matches;
-    }
-
-
-
-
-
-
-
-
-
-
-
-    function generarSugerencia(link, match, index, tokenSeleccionado = null, totalMatches) {
-    const tokens = generarOpcionesToken(match.URL);
-    let selectedToken = tokenSeleccionado;
-
-    if (!selectedToken && tokens.length > 0) {
-        selectedToken = tokens[0];
-    } else if (!selectedToken && tokens.length === 0) {
-        return '<p>No se encontraron tokens disponibles.</p>';
-    }
-
-
-
-
-
-
-
-  // Extraer el RID del enlace
-  let rid = null;
-
-  // Expresión regular para buscar un RID que comience con "67" y tenga el formato deseado
-  const ridRegex = /(67[0-9a-fA-F]{2,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{12,})/i;  // La "i" hace la búsqueda insensible a mayúsculas. Ajusta las cantidades de digitos.
-
-  // Intentar extraer el RID como parámetro explícito
-  const ridParamMatch = link.match(/[?&]RID=(67[0-9a-fA-F-]+)/i);
-  if (ridParamMatch) {
-      rid = ridParamMatch[1];
-  } else {
-      // Si no hay un parámetro RID, buscar cualquier valor que coincida con el patrón
-      const ridValueMatch = link.match(ridRegex);
-      rid = ridValueMatch ? ridValueMatch[1] : null;
-  }
-
-  if (!rid) {
-      return '<p>No se encontró un ID que empiece por 67 con el formato esperado en el enlace.</p>';
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // Intentar analizar la URL del template
-    let templateURL, templateParams, paramOrder;
-    try {
-        templateURL = new URL(match.URL);
-        templateParams = templateURL.searchParams;
-        paramOrder = Array.from(templateParams.entries());
-    } catch (error) {
-        console.error("Error: URL inválida -", match.URL);
-        return `<p>Error: La URL proporcionada no es válida (${match.URL}).</p>`;
-    }
-
-    // Construir la URL basándose en el orden del template
-    let generatedLink = `https://notch.insights.supply/cb?`;
-    let firstParam = true;
-
-    for (const [paramKey, paramValue] of paramOrder) {
-        let value = paramKey === 'token' ? selectedToken : (paramKey.toLowerCase() === 'rid' ? rid : paramValue);
-        let paramName = paramKey;
-
-        if (paramName.toLowerCase() === 'rid') {
-            paramName = 'RID'; // Mantener el nombre del parámetro en mayúsculas
+            return matches;
         }
 
-        if (value !== undefined && value !== null && value !== '') { // Agregar solo si tiene valor
-            generatedLink += (firstParam ? '' : '&') + `${paramName}=${value}`;
-            firstParam = false;
-        }
-    }
 
-    let tokenOptionsHTML = '';
-    if (tokens.length > 1) {
-        tokenOptionsHTML = `<div class="opciones-token">
+        function generarSugerencia(link, match, index, tokenSeleccionado = null, totalMatches) {
+            const tokens = generarOpcionesToken(match.URL);
+            let selectedToken = tokenSeleccionado;
+
+            if (!selectedToken && tokens.length > 0) {
+                selectedToken = tokens[0];
+            } else if (!selectedToken && tokens.length === 0) {
+                return '<p>No se encontraron tokens disponibles.</p>';
+            }
+
+
+            // Extraer el RID del enlace
+            let rid = null;
+
+            // Expresión regular para buscar un RID que comience con "67" y tenga el formato deseado
+            const ridRegex = /(67[0-9a-fA-F]{2,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{12,})/i;  // La "i" hace la búsqueda insensible a mayúsculas. Ajusta las cantidades de digitos.
+
+            // Intentar extraer el RID como parámetro explícito
+            const ridParamMatch = link.match(/[?&]RID=(67[0-9a-fA-F-]+)/i);
+            if (ridParamMatch) {
+                rid = ridParamMatch[1];
+            } else {
+                // Si no hay un parámetro RID, buscar cualquier valor que coincida con el patrón
+                const ridValueMatch = link.match(ridRegex);
+                rid = ridValueMatch ? ridValueMatch[1] : null;
+            }
+
+            if (!rid && !idNotFoundErrorShown) {
+                idNotFoundErrorShown = true; // Set the flag to true after showing the message.
+                ohnoVideoDiv.style.display = 'block';
+                playVideo();  // Play the video
+                return '<p>No se encontró un ID que empiece por 67 con el formato esperado en el enlace.</p>';  // Show the message
+
+            } else if (!rid && idNotFoundErrorShown) {
+                return '';
+            }
+
+
+            // Intentar analizar la URL del template
+            let templateURL, templateParams, paramOrder;
+            try {
+                templateURL = new URL(match.URL);
+                templateParams = templateURL.searchParams;
+                paramOrder = Array.from(templateParams.entries());
+            } catch (error) {
+                console.error("Error: URL inválida -", match.URL);
+                return `<p>Error: La URL proporcionada no es válida (${match.URL}).</p>`;
+            }
+
+            // Construir la URL basándose en el orden del template
+            let generatedLink = `https://notch.insights.supply/cb?`;
+            let firstParam = true;
+
+            for (const [paramKey, paramValue] of paramOrder) {
+                let value = paramKey === 'token' ? selectedToken : (paramKey.toLowerCase() === 'rid' ? rid : paramValue);
+                let paramName = paramKey;
+
+                if (paramName.toLowerCase() === 'rid') {
+                    paramName = 'RID'; // Mantener el nombre del parámetro en mayúsculas
+                }
+
+                if (value !== undefined && value !== null && value !== '') { // Agregar solo si tiene valor
+                    generatedLink += (firstParam ? '' : '&') + `${paramName}=${value}`;
+                    firstParam = false;
+                }
+            }
+
+            let tokenOptionsHTML = '';
+            if (tokens.length > 1) {
+                tokenOptionsHTML = `<div class="opciones-token">
             ${tokens.map((token, i) => {
-                const isSelectedClass = token === selectedToken ? 'seleccionado' : '';
-                const tokenLabel = `${token.substring(0, 2)}...${token.substring(token.length - 2)}`;
-                return `<span class="opcion-token ${isSelectedClass}" data-token="${token}" data-index="${index}">${tokenLabel}</span>`;
-            }).join('')}
+                    const isSelectedClass = token === selectedToken ? 'seleccionado' : '';
+                    const tokenLabel = `${token.substring(0, 2)}...${token.substring(token.length - 2)}`;
+                    return `<span class="opcion-token ${isSelectedClass}" data-token="${token}" data-index="${index}">${tokenLabel}</span>`;
+                }).join('')}
         </div>`;
-    }
+            }
 
-    const suggestionTitle = totalMatches > 1 ? `<h3>Sugerencia ${index + 1}</h3>` : `<h3>Sugerencia</h3>`;
+            const suggestionTitle = totalMatches > 1 ? `<h3>Sugerencia ${index + 1}</h3>` : `<h3>Sugerencia</h3>`;
 
-    return `
+            return `
         <div class="sugerencia" data-index="${index}">
             ${suggestionTitle}
             <p><strong>Tipo de Survey:</strong> Samplicious</p>
@@ -486,192 +471,171 @@ document.addEventListener('DOMContentLoaded', () => {
             <p><strong>Link Generado:</strong> <span class="copy-link" data-link="${generatedLink}" style="cursor:pointer; text-decoration: underline; text-decoration-color:#bbb;">${generatedLink}</span></p>
         </div>
     `;
-}
-
-
-
-
-
-
-    
-    
-  function generarOpcionesToken(url){
-        const urlParams = new URL(url).searchParams
-      const tokenParam = urlParams.get('token')
-        if(tokenParam){
-           return [tokenParam]
         }
 
-        const tokenMatches = url.match(/token=([a-f0-9-]+)/g);
-        if (tokenMatches) {
-           return  tokenMatches.map(match => match.split("=")[1])
-       }
-        return []
-   }
+
+        function generarOpcionesToken(url) {
+            const urlParams = new URL(url).searchParams
+            const tokenParam = urlParams.get('token')
+            if (tokenParam) {
+                return [tokenParam]
+            }
+
+            const tokenMatches = url.match(/token=([a-f0-9-]+)/g);
+            if (tokenMatches) {
+                return tokenMatches.map(match => match.split("=")[1])
+            }
+            return []
+        }
 
 
+        async function generarLinks() {
+            resultadosDiv.innerHTML = 'Cargando...';
+            ohnoVideoDiv.style.display = 'none';
+            const link = linkInput.value.trim();
+
+            // Reset the idNotFoundErrorShown flag at the beginning of each link generation
+            idNotFoundErrorShown = false;
+
+            if (!link) {
+                resultadosDiv.innerHTML = 'Por favor, introduce un link.';
+                return;
+            }
+
+            const regexLink = /(https?:\/\/[^\s]+)/gi;
+            if (!regexLink.test(link)) {
+                resultadosDiv.innerHTML = 'Eso no es un link válido, o no se detectaron links en el texto ingresado.';
+                return;
+            }
+
+            if (dataCache.length === 0) {
+                dataCache = await obtenerDatos();
+            }
+
+            if (dataCache.length === 0) {
+                resultadosDiv.innerHTML = 'Error al cargar los datos. Intenta nuevamente más tarde.';
+                return;
+            }
+
+            const coincidencias = buscarCoincidencias(link, dataCache);
+            if (coincidencias.length === 0) {
+                resultadosDiv.innerHTML = 'No se encontraron coincidencias.';
+                ohnoVideoDiv.style.display = 'block';
+                playVideo();
+                return;
+            }
+
+            // Si se encontraron coincidencias, resetear videoPlayed
+            videoPlayed = false;
+
+            resultadosDiv.innerHTML = 'Se encontraron coincidencias:';
+
+            let sugerenciasHTML = '';
+            coincidencias.forEach((match, index) => {
+                let suggestionHTML = generarSugerencia(link, match, index, null, coincidencias.length);
+                if (suggestionHTML) { // Only append if the suggestion has content
+                    sugerenciasHTML += suggestionHTML;
+                }
+            });
+
+            resultadosDiv.innerHTML = sugerenciasHTML;
+
+            // Check if RID was found *before* playing the suggestion audio
+            if (!idNotFoundErrorShown) {
+                playSugerenciaAudio();  // Play audio if RID was found.
+            }
+
+            const opcionesToken = document.querySelectorAll('.opcion-token');
+            opcionesToken.forEach(opcion => {
+                opcion.addEventListener('click', function () {
+                    const token = this.getAttribute('data-token')
+                    const index = this.getAttribute('data-index')
+                    const parentDiv = document.querySelector(`.sugerencia[data-index="${index}"]`);
+
+                    const tokensSpan = parentDiv.querySelectorAll(".opcion-token");
+                    tokensSpan.forEach(span => {
+                        span.classList.remove("seleccionado")
+                    });
+                    this.classList.add("seleccionado");
+
+                    const match = coincidencias[index];
+                    const linkGenerado = generarSugerencia(link, match, parseInt(index), token, coincidencias.length)
+
+                    parentDiv.outerHTML = linkGenerado;
+                    // playSugerenciaAudio(); // Reproducir el audio al generar el link - REMOVED
+                })
+            })
+
+            const copyLinks = document.querySelectorAll('.copy-link');
+            copyLinks.forEach(copyLink => {
+                copyLink.addEventListener('click', function () {
+                    const linkToCopy = this.getAttribute('data-link');
+                    copyToClipboard(linkToCopy);
+                    this.textContent = 'Link Copiado!';
+                    setTimeout(() => {
+                        this.textContent = linkToCopy
+                    }, 2000)
+                });
+            });
+            // playSugerenciaAudio(); // keep the audio here for suggestion generation - REMOVED
+        }
 
 
-
-
-
-   async function generarLinks() {
-    resultadosDiv.innerHTML = 'Cargando...';
-    ohnoVideoDiv.style.display = 'none';
-    const link = linkInput.value.trim();
-
-    if (!link) {
-        resultadosDiv.innerHTML = 'Por favor, introduce un link.';
-        return;
-    }
-
-    const regexLink = /(https?:\/\/[^\s]+)/gi;
-    if (!regexLink.test(link)) {
-        resultadosDiv.innerHTML = 'Eso no es un link válido, o no se detectaron links en el texto ingresado.';
-        return;
-    }
-
-    if (dataCache.length === 0) {
-        dataCache = await obtenerDatos();
-    }
-
-    if (dataCache.length === 0) {
-        resultadosDiv.innerHTML = 'Error al cargar los datos. Intenta nuevamente más tarde.';
-        return;
-    }
-
-    const coincidencias = buscarCoincidencias(link, dataCache);
-    if (coincidencias.length === 0) {
-        resultadosDiv.innerHTML = 'No se encontraron coincidencias.';
-        ohnoVideoDiv.style.display = 'block';
-
-        // Reproducir el video solo una vez
-        if (!videoPlayed) {
-          ohnoVideoElement.muted = false;
+        function playVideo() {
+            ohnoVideoElement.muted = false;
             ohnoVideoElement.volume = 1;
 
             const playPromise = ohnoVideoElement.play();
 
             if (playPromise !== undefined) {
-              playPromise.then(() => {
-                // Automatic playback started!
-              })
-              .catch(error => {
-                // Auto-play was prevented
-                console.error("Autoplay prevented:", error);
-                ohnoVideoElement.controls = true; // Show controls if autoplay fails
-              });
+                playPromise.then(() => {
+                    // Automatic playback started!
+                })
+                    .catch(error => {
+                        // Auto-play was prevented
+                        console.error("Autoplay prevented:", error);
+                        ohnoVideoElement.controls = true; // Show controls if autoplay fails
+                    });
             }
-
-            videoPlayed = true;
 
             // Remove the loop attribute to prevent looping
             ohnoVideoElement.removeAttribute("loop");
         }
 
-        return;
-    }
+        // Función para copiar al portapapeles
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text)
+                .catch(err => {
+                    console.error('Error al copiar al portapapeles: ', err);
+                });
+        }
 
-    // Si se encontraron coincidencias, resetear videoPlayed
-    videoPlayed = false;
-
-    resultadosDiv.innerHTML = 'Se encontraron coincidencias:';
-    coincidencias.forEach((coincidencia, index) => {
-        resultadosDiv.innerHTML += generarSugerencia(link, coincidencia, index, null, coincidencias.length);
+        generarButton.addEventListener('click', generarLinks);
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-        let sugerenciasHTML = '';
-        coincidencias.forEach((match, index) => {
-           sugerenciasHTML += generarSugerencia(link, match, index, null, coincidencias.length);
-       });
-
-         resultadosDiv.innerHTML = sugerenciasHTML;
-
-         const opcionesToken = document.querySelectorAll('.opcion-token');
-         opcionesToken.forEach(opcion =>{
-            opcion.addEventListener('click', function() {
-                const token = this.getAttribute('data-token')
-                const index = this.getAttribute('data-index')
-                 const parentDiv =  document.querySelector(`.sugerencia[data-index="${index}"]`);
-
-                 const tokensSpan = parentDiv.querySelectorAll(".opcion-token");
-                 tokensSpan.forEach(span => {
-                       span.classList.remove("seleccionado")
-                   });
-                this.classList.add("seleccionado");
-
-                 const match = coincidencias[index];
-                  const linkGenerado = generarSugerencia(link, match, parseInt(index),token, coincidencias.length)
-
-                  parentDiv.outerHTML = linkGenerado;
-                  playSugerenciaAudio(); // Reproducir el audio al generar el link
-            })
-         })
-        const copyLinks = document.querySelectorAll('.copy-link');
-         copyLinks.forEach(copyLink => {
-             copyLink.addEventListener('click', function() {
-                const linkToCopy = this.getAttribute('data-link');
-                 copyToClipboard(linkToCopy);
-                 this.textContent = 'Link Copiado!';
-                setTimeout(() => {
-                  this.textContent = linkToCopy
-                }, 2000)
-           });
-       });
-       playSugerenciaAudio();
-   }
-
-
-
-
-
-
-    // Función para copiar al portapapeles
-   function copyToClipboard(text) {
-      navigator.clipboard.writeText(text)
-         .catch(err => {
-             console.error('Error al copiar al portapapeles: ', err);
-        });
-    }
-
-    generarButton.addEventListener('click', generarLinks);
-});
 
 </script>
 
 
 <script>
 
-const linkTitle = document.getElementById('linkTitle');
+    const linkTitle = document.getElementById('linkTitle');
     const infoModal = document.getElementById('infoModal');
     const closeModalButton = document.getElementById('closeModal');
-     const linkpagina = document.querySelector('.linkpagina');
+    const linkpagina = document.querySelector('.linkpagina');
 
     linkTitle.addEventListener('click', () => {
-         infoModal.style.display = 'block';
+        infoModal.style.display = 'block';
     });
 
     closeModalButton.addEventListener('click', () => {
         infoModal.style.display = 'none';
     });
 
-   window.addEventListener('click', (event) => {
+    window.addEventListener('click', (event) => {
         if (event.target === infoModal) {
-             infoModal.style.display = 'none';
+            infoModal.style.display = 'none';
         }
-   });
+    });
 
     linkpagina.addEventListener('click', () => {
         const url = linkpagina.getAttribute('data-url');
@@ -682,12 +646,6 @@ const linkTitle = document.getElementById('linkTitle');
 </script>
 
 
-
-
-
-
-
-
 <script>
     // Variable para almacenar el tiempo de inactividad
     let inactivityTimeout;
@@ -696,10 +654,19 @@ const linkTitle = document.getElementById('linkTitle');
     function limpiarCampos() {
         const linkInput = document.getElementById('linkInput');
         const resultadosDiv = document.getElementById('resultados');
+        const ohnoVideoDiv = document.getElementById('ohnoVideo'); // Get the video div
 
         // Limpiar el contenido del textarea y del div de resultados
         linkInput.value = '';
         resultadosDiv.innerHTML = '';
+
+        // Hide the video and reset video-related state.
+        ohnoVideoDiv.style.display = 'none';
+        const ohnoVideoElement = document.getElementById('ohnoVideoElement');
+        if (ohnoVideoElement) { // Check if video element exists.
+            ohnoVideoElement.pause();  // Pause the video if it's playing.
+            ohnoVideoElement.currentTime = 0; // Reset video to start.
+        }
 
         console.log('Los campos han sido limpiados automáticamente.');
     }
@@ -722,14 +689,6 @@ const linkTitle = document.getElementById('linkTitle');
     // Inicializamos el temporizador de inactividad al cargar la página
     resetInactivityTimer();
 </script>
-
-
-
-
-
-
-
-
 
 
 </html>
