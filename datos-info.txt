@@ -1139,3 +1139,17 @@ Fecha: 01, March, 2025. 04:15 PM
 Comentario: si paga
 
 ----------------
+Nombre: https://panelapps.phronesis-partners.com/
+URL: https://notch.insights.supply/cb?token=1499653c-5310-4cb2-9042-514f6b114713&RID=
+Tipo de Survey: Samplicious
+Fecha: 03, March, 2025. 09:32 PM
+Comentario: si paga
+
+----------------
+Nombre: https://surveys.sago.com/
+URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx&secret=1574
+Tipo de Survey: Samplicious
+Fecha: 03, March, 2025. 09:32 PM
+Comentario: si paga
+
+----------------
