@@ -1139,3 +1139,10 @@ Fecha: 03, March, 2025. 09:32 PM
 Comentario: si paga
 
 ----------------
+Nombre: https://consumer.pureprofile.com/
+URL: https://surveys.sample-cube.com/ending?RS=1&RID=xx&secret=40044
+Tipo de Survey: Sample-cube
+Fecha: 04, March, 2025. 05:16 PM
+Comentario: Si paga!
+
+----------------
