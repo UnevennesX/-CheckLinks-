@@ -19,6 +19,13 @@ Fecha: 05, March, 2025. 02:20 PM
 Comentario: Si paga!
 
 ----------------
+Nombre: https://insights.opinionelite.com/
+URL: http://notch.insights.supply/cb?token=4396df28-e728-407d-be0b-75c77a88826d&RID=
+Tipo de Survey: Samplicious
+Fecha: 05, March, 2025. 04:29 PM
+Comentario: si paga!
+
+----------------
 Nombre: https://surveys.audience-align.com
 URL: https://notch.insights.supply/cb?token=cb8f4af5-0173-44b1-802a-8c7d5cabd9e3&RID=
 Tipo de Survey: Samplicious
