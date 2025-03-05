@@ -5,94 +5,10 @@ Fecha: 15, August, 2024. 04:03 PM
 Comentario: si paga
 
 ----------------
-Nombre: participation.dtect.io
-URL: https://notch.insights.supply/cb?token=4396df28-e728-407d-be0b-75c77a88826d&RID=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 04:06 PM
-Comentario: si paga
-
-----------------
-Nombre: surveys.gartner
-URL: https://notch.insights.supply/cb?token=ccd4b10c-af8b-4939-b99f-0a68f1077051&RID=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 04:09 PM
-Comentario: si paga
-
-----------------
-Nombre: app.cloudresearch
-URL: https://notch.insights.supply/cb?token=b6f90209-47d4-4e66-ba4a-6df1d0428c3a&RID=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 04:12 PM
-Comentario: si paga
-
-----------------
-Nombre: idealabsurveys.questionpro
-URL: https://notch.insights.supply/cb?token=463a4519-dab3-4235-a885-e42e71fb7dcc&RID=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 04:13 PM
-Comentario: si paga
-
-----------------
-Nombre: core-gp.firstinsight
-URL: https://notch.insights.supply/cb?token=2f8449ae-fafe-4208-a814-06dcbdda879e&RID=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 04:13 PM
-Comentario: si paga
-
-----------------
-Nombre: as-c1-web01.opinion.life
-URL: https://notch.insights.supply/cb?token=e770d4e9-3b78-4326-a3fa-f314983fb33d&RID=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 04:13 PM
-Comentario: si paga
-
-----------------
-Nombre: ld.datadecisionsgroup
-URL: https://notch.insights.supply/cb?token=7d2f8733-49ef-4ccb-b7c0-f7c2b8167e98&RID=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 04:14 PM
-Comentario: si paga
-
-----------------
 Nombre: surveys.getwizer
 URL: https://notch.insights.supply/cb?token=0b54976e-c76f-4b79-ba87-2e636c070950&rid=
 Tipo de Survey: Samplicious
 Fecha: 15, August, 2024. 04:15 PM
-Comentario: si paga
-
-----------------
-Nombre: surveymonkey.com/r/59WY55X
-URL: https://notch.insights.supply/cb?token=c7953959-d9a1-415b-a915-f15d2809d172&fedResponseID=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 04:15 PM
-Comentario: si paga
-
-----------------
-Nombre: surveys.opinionsite
-URL: https://notch.insights.supply/cb?token=e5ba2196-1c0d-4e5a-b789-6ce087d74881&RID=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 04:16 PM
-Comentario: si paga
-
-----------------
-Nombre: research.logicaresearchsurvey.com/survey/selfserve/53b/s365007301
-URL: https://redirect.mindsharesurveys.com/v1/M7FMAqNSgNBiTKRoDbiNJ4YiXPN2cBin?proj=3c076c00a76de1ff9e762ceefc433dce31cf87d9&id=cf6bf751-c07f-48fb-959a-b77b96bae764&status=1
-Tipo de Survey: Invite
-Fecha: 15, August, 2024. 04:17 PM
-Comentario: si paga
-
-----------------
-Nombre: se.navigatorsurveys
-URL: https://se.navigatorsurveys.com/api/survey/redirect?status=Complete&or1=
-Tipo de Survey: Internos
-Fecha: 15, August, 2024. 04:26 PM
-Comentario: si paga
-
-----------------
-Nombre: survey.jibunu
-URL: https://notch.insights.supply/cb?token=c0336dc3-393d-48a0-b207-3830d0e412fa&RID=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 05:44 PM
 Comentario: si paga
 
 ----------------
@@ -131,39 +47,11 @@ Fecha: 15, August, 2024. 08:08 PM
 Comentario: N/A
 
 ----------------
-Nombre: engine
-URL: https://surveyengine.pureprofile.com/api/v1/universal/payment/completed?num=1&ppid=
-Tipo de Survey: Internos
-Fecha: 15, August, 2024. 08:08 PM
-Comentario: N/A
-
-----------------
-Nombre: sampleeye
-URL: https://uf.sampleeye.com/end?RT=xxxxxxx&Status=5
-Tipo de Survey: Internos
-Fecha: 15, August, 2024. 08:09 PM
-Comentario: N/A
-
-----------------
 Nombre: https://websurvey5.opinionbar.com
 URL: http://www.status70.com
 Tipo de Survey: Samplicious
 Fecha: 15, August, 2024. 08:26 PM
 Comentario: Envia a otra
-
-----------------
-Nombre: vault.questionlab
-URL: https://notch.insights.supply/cb?token=9575fc16-0317-4608-93e9-b477730e37ac&RID=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 08:51 PM
-Comentario: tambien tiene interno
-
-----------------
-Nombre: mrxsurveys
-URL: https://notch.insights.supply/cb?token=459944e1-fc53-41b1-a7e7-20ff53b97931&RID=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 08:53 PM
-Comentario: N/A
 
 ----------------
 Nombre: https://pt.surveysavvy.com / www.survey.com
@@ -173,6 +61,13 @@ Fecha: 15, August, 2024. 10:40 PM
 Comentario: Si paga
 
 ----------------
+Nombre: https://se.navigatorsurveys.com/
+URL: https://se.navigatorsurveys.com/api/survey/redirect?status=Complete&or1=
+Tipo de Survey: Internos
+Fecha: 15, August, 2024. 04:26 PM
+Comentario: si paga
+
+----------------
 Nombre: https://hanover-research.qualtrics.com/jfe/form/SV_8qesxXOJ9BOFDoi
 URL: https://notch.insights.supply/cb?token=ae990982-a494-4bb5-87b1-ca6f250275be&RID=
 Tipo de Survey: Samplicious
@@ -180,45 +75,31 @@ Fecha: 15, August, 2024. 04:29 PM
 Comentario: SI PAGA : )!! NEW
 
 ----------------
+Nombre: https://surveyengine.pureprofile.com/
+URL: https://surveyengine.pureprofile.com/api/v1/universal/payment/completed?num=1&ppid=
+Tipo de Survey: Internos
+Fecha: 15, August, 2024. 08:08 PM
+Comentario: si paga!
+
+----------------
+Nombre: https://uf.sampleeye.com/
+URL: https://uf.sampleeye.com/end?RT=xxxxxxx&Status=5
+Tipo de Survey: Internos
+Fecha: 15, August, 2024. 08:09 PM
+Comentario: N/A
+
+----------------
+Nombre: https://vault.questionlab.com/
+URL: https://notch.insights.supply/cb?token=9575fc16-0317-4608-93e9-b477730e37ac&RID=
+Tipo de Survey: Samplicious
+Fecha: 15, August, 2024. 08:51 PM
+Comentario: tambien tiene interno
+
+----------------
 Nombre: https://m.survey.bz
 URL: https://redirect.mindsharesurveys.com/v1/M7FMAqNSgNBiTKRoDbiNJ4YiXPN2cBin?proj=XXXXXXXXXXXXX&id=XXXXXXXXXXX&status=1
 Tipo de Survey: Invite
 Fecha: 15, August, 2024. 11:38 PM
-Comentario: SI PAGA : )
-
-----------------
-Nombre: surveys.propellerinsights.com
-URL: https://notch.insights.supply/cb?token=e52d16b6-04d8-471a-ad0b-170037da3c76&rid=
-Tipo de Survey: Samplicious
-Fecha: 16, August, 2024. 08:18 PM
-Comentario: N/A
-
-----------------
-Nombre: us1se.voxco
-URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=
-Tipo de Survey: Spectrum
-Fecha: 16, August, 2024. 09:46 PM
-Comentario: N/A
-
-----------------
-Nombre: survey.az1.qualtrics
-URL: https://notch.insights.supply/cb?token=703ab600-551f-45c2-a4b0-eea7890f79c7&RID=
-Tipo de Survey: Samplicious
-Fecha: 18, August, 2024. 06:11 AM
-Comentario: SI PAGA : )
-
-----------------
-Nombre: router.cint
-URL: https://notch.insights.supply/cb?token=880c4d83-d9ea-4406-a19b-ff23c3d5da36&RID=XXXXXXX&cint_arid=LINK-CINT
-Tipo de Survey: Samplicious
-Fecha: 18, August, 2024. 02:47 PM
-Comentario: N/A
-
-----------------
-Nombre: r.mintvine
-URL: https://notch.insights.supply/cb?token=8f0c09b8-f1ac-4255-b725-f72de62b8133&RID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&ienc2=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Tipo de Survey: Samplicious
-Fecha: 19, August, 2024. 02:24 AM
 Comentario: SI PAGA : )
 
 ----------------
@@ -243,25 +124,11 @@ Fecha: 19, August, 2024. 09:58 PM
 Comentario: Se genera
 
 ----------------
-Nombre: vault.questionlab
-URL: http://www.status/1.com
-Tipo de Survey: Internos
-Fecha: 20, August, 2024. 12:23 AM
-Comentario: Status=1 pagß
-
-----------------
 Nombre: https://rl.sawtoothsoftware.com
 URL: https://notch.insights.supply/cb?token=a6299f08-61df-49e6-8a6f-91a404e5fede&RID=
 Tipo de Survey: Samplicious
 Fecha: 21, August, 2024. 03:26 AM
 Comentario: Si paga
-
-----------------
-Nombre: participation.dtect.io
-URL: https://redirect.mindsharesurveys.com/v1/M7FMAqNSgNBiTKRoDbiNJ4YiXPN2cBin?proj=b2bbae08aee28c86a783f05088412d9384585844&id=3e5e89ba-6b7e-46c4-837d-3508a6c455be&status=1
-Tipo de Survey: Invite
-Fecha: 21, August, 2024. 03:31 AM
-Comentario: como todas las invite sustituir el id
 
 ----------------
 Nombre: https://ezio.link
@@ -292,20 +159,6 @@ Fecha: 22, August, 2024. 06:13 PM
 Comentario: https://message.insight.rakuten.com // https://enter.ipsosinteractive.com
 
 ----------------
-Nombre: https://survey.alchemer.com/
-URL: https://notch.insights.supply/cb?token=dea46412-25c2-4c16-bcd9-962e75d8a8a3&RID=XXXXX&mode=online
-Tipo de Survey: Samplicious
-Fecha: 22, August, 2024. 10:55 PM
-Comentario: Si paga (Las que dicen CORE en el link pagan con este)
-
-----------------
-Nombre: insights.surveynavigate.app
-URL: https://notch.insights.supply/cb?token=07acc3b2-400d-4219-8c33-67eb3257720f&RID=
-Tipo de Survey: Samplicious
-Fecha: 23, August, 2024. 01:15 AM
-Comentario: SI PAGA : )
-
-----------------
 Nombre: https://roirocket.decipherinc.com/survey/selfserve/59c/62825q3b
 URL: https://research.roirocket.com/surveyresults.aspx?ss=ad0434&vid=
 Tipo de Survey: Roirocket
@@ -320,13 +173,6 @@ Fecha: 23, August, 2024. 06:59 PM
 Comentario: sustituir id
 
 ----------------
-Nombre: spidermetrix
-URL: https://notch.insights.supply/cb?token=f82ecac8-2ebb-4687-a8b8-1d6f20e1fcaa&RID=
-Tipo de Survey: Samplicious
-Fecha: 23, August, 2024. 08:51 PM
-Comentario: si paga
-
-----------------
 Nombre: https://ezio.link
 URL: https://notch.insights.supply/cb?token=8c9babfd-e895-4d4b-ab6e-e8a81e3cdcde&RID=
 Tipo de Survey: Samplicious
@@ -334,60 +180,32 @@ Fecha: 24, August, 2024. 04:19 AM
 Comentario: Si paga
 
 ----------------
-Nombre: surveys.marconline
-URL: https://research.roirocket.com/surveyresults.aspx?ss=d8a4d1&vid=
-Tipo de Survey: Spectrum
-Fecha: 25, August, 2024. 02:48 PM
-Comentario: Si paga. De research.roirocket a surveys.marconline
+Nombre: https://vault.questionlab.com/
+URL: http://www.status/1.com
+Tipo de Survey: Internos
+Fecha: 20, August, 2024. 12:23 AM
+Comentario: Status=1 pagß
 
 ----------------
-Nombre: se.navigator
+Nombre: https://se.navigatorsurveys.com/
 URL: https://redirect.mindsharesurveys.com/v1/M7FMAqNSgNBiTKRoDbiNJ4YiXPN2cBin?proj=d95edef44055f99f925341c094063ed159f5117a&id=ceb88533-bf49-4f1f-8fa6-5c72ea6ec89a&status=1
 Tipo de Survey: Invite
 Fecha: 29, August, 2024. 02:39 PM
 Comentario: es como la bz se puede editar ambos codes
 
 ----------------
-Nombre: dimensions5.mercuryanalytics.com
+Nombre: https://dimensions5.mercuryanalytics.com/
 URL: https://notch.insights.supply/cb?token=cb87a024-0a0e-4a35-9918-e325b6f3454a&RID=
 Tipo de Survey: Samplicious
 Fecha: 29, August, 2024. 02:39 PM
-Comentario: N/A
+Comentario: si paga!
 
 ----------------
-Nombre: shrm.co1
-URL: https://notch.insights.supply/cb?token=1e2a739d-298d-4688-b8c2-5c903f9974f8&RID=
+Nombre: https://STUDY.LUMEN-RESEARCH.COM/
+URL: https://notch.insights.supply/cb?RID=xxx&token=034287b2-1ca0-48d1-9e45-f5ca740ef529
 Tipo de Survey: Samplicious
 Fecha: 29, August, 2024. 02:40 PM
-Comentario: N/A
-
-----------------
-Nombre: study.lumen
-URL: https://notch.insights.supply/cb?RID=xxxxxxxxx-xxxxxx-xxxxxx-xxxxxxxxx-xxxxxxxxx-&token=034287b2-1ca0-48d1-9e45-f5ca740ef529
-Tipo de Survey: Samplicious
-Fecha: 29, August, 2024. 02:40 PM
-Comentario: N/A
-
-----------------
-Nombre: icion
-URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=xx&ps_hash=mYhzY06x
-Tipo de Survey: Spectrum
-Fecha: 29, August, 2024. 02:41 PM
-Comentario: N/A
-
-----------------
-Nombre: hkstrategiescanada
-URL: https://notch.insights.supply/cb?token=abd6da4f-802f-46ad-9f8c-1cda9a8e370b&RID=
-Tipo de Survey: Samplicious
-Fecha: 29, August, 2024. 02:41 PM
-Comentario: N/A
-
-----------------
-Nombre: sapio
-URL: https://notch.insights.supply/cb?token=b250b17e-f69d-4ce7-ae8c-94f3854ddc0c&RID=
-Tipo de Survey: Samplicious
-Fecha: 29, August, 2024. 02:41 PM
-Comentario: N/A
+Comentario: si paga!
 
 ----------------
 Nombre: https://tssrvy.com
@@ -418,13 +236,6 @@ Fecha: 01, September, 2024. 09:29 PM
 Comentario: Se genera
 
 ----------------
-Nombre: survey.emi-rs
-URL: https://notch.insights.supply/cb?token=2b870e97-7185-4998-8d47-5f94b3a879bc&RID=
-Tipo de Survey: Samplicious
-Fecha: 03, September, 2024. 04:41 PM
-Comentario: SI PAGA : )
-
-----------------
 Nombre: https://x1.intellisurvey.com/pub/k240710257b
 URL: https://research.roirocket.com/surveyresults.aspx?ss=f7bbd2&vid=
 Tipo de Survey: Roirocket
@@ -439,13 +250,6 @@ Fecha: 05, September, 2024. 02:41 PM
 Comentario: Con el cort≤
 
 ----------------
-Nombre: http://Surveys.vitreousworld.com
-URL: https://notch.insights.supply/cb?token=8d38045d-d4e2-43ab-a956-622cc28619d4&RID=
-Tipo de Survey: Samplicious
-Fecha: 17, September, 2024. 02:44 PM
-Comentario: N/A
-
-----------------
 Nombre: https://prescan.tofiresearch
 URL: https://notch.insights.supply/cb?token=2a8251a3-5ab4-4188-b5f9-df68686bf3f6&RID=
 Tipo de Survey: Samplicious
@@ -453,25 +257,11 @@ Fecha: 17, September, 2024. 02:44 PM
 Comentario: N/A
 
 ----------------
-Nombre: alchemer-ca
-URL: https://notch.insights.supply/cb?token=3ef59599-cc21-463e-90de-6ebdeb4086d3&rid=
-Tipo de Survey: Samplicious
-Fecha: 17, September, 2024. 04:16 PM
-Comentario: Si paga
-
-----------------
 Nombre: https://incrowdanswers.com
 URL: http://www.corto.com
 Tipo de Survey: Spectrum
 Fecha: 30, September, 2024. 03:50 PM
 Comentario: usar el corto. si paga
-
-----------------
-Nombre: surveys.harrisinsights.com/survey/selfserve/53b
-URL: https://notch.insights.supply/cb?token=ba4eca57-554f-4cd6-8f58-64ee45661e60&RID=
-Tipo de Survey: Samplicious
-Fecha: 30, September, 2024. 11:08 PM
-Comentario: si paga
 
 ----------------
 Nombre: https://surveys.researchbods.com/survey/selfserve/5a9
@@ -485,13 +275,6 @@ Nombre: https://router.cint.com
 URL: https://surveys.sample-cube.com/ending?RS=1&secret=6891&RID=xxx&cint_arid=CandidateRespondentxxx
 Tipo de Survey: Sample-cube
 Fecha: 01, October, 2024. 08:47 PM
-Comentario: si paga
-
-----------------
-Nombre: survey.powerofopinions.co.uk/survey/selfserve/1d32
-URL: https://notch.insights.supply/cb?token=47e88b23-e29c-470a-9018-6a7854929400&RID=
-Tipo de Survey: Samplicious
-Fecha: 01, October, 2024. 11:22 PM
 Comentario: si paga
 
 ----------------
@@ -509,24 +292,10 @@ Fecha: 02, October, 2024. 01:35 AM
 Comentario: si paga
 
 ----------------
-Nombre: EMEA.FOCUSVISION.COM/SURVEY/SELFSERVE/1DA7/AG726?LIST=630
-URL: https://survey.dashmr.com/callback?status=Complete&spid=xxxxx&cx=BHV123
-Tipo de Survey: Survey.Dashmr
-Fecha: 03, October, 2024. 10:08 PM
-Comentario: si paga
-
-----------------
 Nombre: https://dig.ps-di.com
 URL: https://surveys.sample-cube.com/ending?RS=1&secret=367&RID=
 Tipo de Survey: Sample-cube
 Fecha: 04, October, 2024. 03:37 PM
-Comentario: si paga
-
-----------------
-Nombre: go.makersights.com
-URL: https://notch.insights.supply/cb?token=07197ab1-c4ee-4d1f-a67b-1d4013a56404&RID=xxxxx&SKU=2&age=39&audience=panel&country=us&gender=1&panel_id=9050530&userid=unknown-168b-60a6-913b-3853e07b7c68
-Tipo de Survey: Samplicious
-Fecha: 04, October, 2024. 03:50 PM
 Comentario: si paga
 
 ----------------
@@ -551,27 +320,6 @@ Fecha: 25, October, 2024. 04:03 AM
 Comentario: si paga
 
 ----------------
-Nombre: ENGAGE.STATISTA-RESEARCH.COM/INDEX.PHP?R
-URL: https://www.el-corto.com
-Tipo de Survey: Spectrum
-Fecha: 25, October, 2024. 01:03 PM
-Comentario: si paga, con el corto
-
-----------------
-Nombre: brandresearch.qualtrics
-URL: https://notch.insights.supply/cb?token=0d0dc9e7-9541-4365-b4b2-b9522e4a21a7&RID=xxxxxxxxxxxxxxxxx
-Tipo de Survey: Samplicious
-Fecha: 26, October, 2024. 08:08 PM
-Comentario: SI PAGA :)
-
-----------------
-Nombre: surveys.angusreidforum
-URL: https://redirect.mindsharesurveys.com/v1/M7FMAqNSgNBiTKRoDbiNJ4YiXPN2cBin?proj=75085dc6d64f39399d0fd4484194cdf25c2ece2d&id=xxxxxxxxxx&status=1
-Tipo de Survey: Samplicious
-Fecha: 26, October, 2024. 09:46 PM
-Comentario: si paga :)
-
-----------------
 Nombre: https://www.aeononlineresearch.com
 URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=
 Tipo de Survey: Spectrum
@@ -579,11 +327,11 @@ Fecha: 11, November, 2024. 09:31 PM
 Comentario: Si paga
 
 ----------------
-Nombre: surveyengine.pureprofile
-URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=xxxxxxxxx&ps_hash=aG6L3WdY
-Tipo de Survey: Spectrum
-Fecha: 31, August, 2024. 05:51 AM
-Comentario: SI PAGA : )
+Nombre: https://Surveys.vitreousworld.com
+URL: https://notch.insights.supply/cb?token=8d38045d-d4e2-43ab-a956-622cc28619d4&RID=
+Tipo de Survey: Samplicious
+Fecha: 17, September, 2024. 02:44 PM
+Comentario: N/A
 
 ----------------
 Nombre: https://survey-zljl3724.eu.voxpopme.com
@@ -607,13 +355,6 @@ Fecha: 11, December, 2024. 10:08 PM
 Comentario: si paga
 
 ----------------
-Nombre: https://survey.alchemer.com/s3/7504344/cp-core?
-URL: https://notch.insights.supply/cb?token=dea46412-25c2-4c16-bcd9-962e75d8a8a3&rid=
-Tipo de Survey: Samplicious
-Fecha: 12, December, 2024. 12:33 AM
-Comentario: si paga
-
-----------------
 Nombre: https://brandresearch.qualtrics.com/jfe/form/SV
 URL: https://notch.insights.supply/cb?token=cfcf4950-b5dc-4c5c-97c9-1512212f8956&rid=
 Tipo de Survey: Samplicious
@@ -628,25 +369,11 @@ Fecha: 15, August, 2024. 04:35 PM
 Comentario: si paga
 
 ----------------
-Nombre: Canada2020
-URL: https://notch.insights.supply/cb?token=5e36efe9-5c92-4715-8d0f-24c7a6fdf949&RID=
-Tipo de Survey: Samplicious
-Fecha: 15, December, 2024. 05:43 AM
-Comentario: si paga
-
-----------------
 Nombre: https://globalsurveys.nielsen.com
 URL: https://www.status.70.com
 Tipo de Survey: Samplicious
 Fecha: 19, August, 2024. 04:18 PM
 Comentario: Patea y saca una nueva
-
-----------------
-Nombre: https://nexton.us/
-URL: https://notch.insights.supply/cb?token=179fcf48-11bb-4ffa-80ff-6887d7708862&RID=
-Tipo de Survey: Samplicious
-Fecha: 18, December, 2024. 02:19 AM
-Comentario: si paga
 
 ----------------
 Nombre: https://new.surveylion.com
@@ -675,20 +402,6 @@ URL: https://www.rdsecured.com/return?inbound_code=1000&rdud=xxxxxxxxxxxxxxxxxxx
 Tipo de Survey: Internos
 Fecha: 28, December, 2024. 12:31 AM
 Comentario: si paga
-
-----------------
-Nombre: globalresearchstudy
-URL: https://redirect.mindsharesurveys.com/v1/M7FMAqNSgNBiTKRoDbiNJ4YiXPN2cBin?proj=3f3ac5c82b2b8cb1cef64ca67d58a6c24f234850&id=XXXXXXXXXXXXX&status=1
-Tipo de Survey: Invite
-Fecha: 28, December, 2024. 12:32 AM
-Comentario: si paga
-
-----------------
-Nombre: net-research.com
-URL: https://notch.insights.supply/cb?token=96852782-cc29-4309-8734-dfcdf8ce9ac0&RID=
-Tipo de Survey: Samplicious
-Fecha: 14, January, 2025. 04:13 AM
-Comentario: SI PAGA:)
 
 ----------------
 Nombre: https://www.surveygizmo.com/s3/8154884/440248314063883
@@ -803,18 +516,18 @@ Fecha: 31, January, 2025. 02:55 PM
 Comentario: Si paga!
 
 ----------------
-Nombre: invite.rmrsurveys.com/
-URL: https://notch.insights.supply/cb?token=9a605f9b-08e2-4923-827d-16a733f5b88c&RID=xxx
-Tipo de Survey: Samplicious
-Fecha: 31, January, 2025. 05:47 PM
-Comentario: Si paga
-
-----------------
 Nombre: https://opinioninn.com/
 URL: https://notch.insights.supply/cb?token=76280fae-28c5-477e-a24c-2491a7891ec6&RID=
 Tipo de Survey: Samplicious
 Fecha: 01, February, 2025. 02:02 AM
 Comentario: si paga!
+
+----------------
+Nombre: https://invite.rmrsurveys.com/
+URL: https://notch.insights.supply/cb?token=9a605f9b-08e2-4923-827d-16a733f5b88c&RID=xxx
+Tipo de Survey: Samplicious
+Fecha: 31, January, 2025. 05:47 PM
+Comentario: Si paga
 
 ----------------
 Nombre: https://surveysconnect.co.uk/
@@ -985,13 +698,6 @@ Fecha: 25, February, 2025. 05:51 AM
 Comentario: si paga
 
 ----------------
-Nombre: https://api.kyrios.online/#/screenersurvey/final?survey=DdZMRy0e
-URL: https://notch.insights.supply/cb/?token=a6bf1a16-9764-4cfc-b843-5dc0f0ba01ec&RID=
-Tipo de Survey: Samplicious
-Fecha: 21, February, 2025. 08:27 PM
-Comentario: si paga
-
-----------------
 Nombre: https://api.kyrios.online/
 URL: https://notch.insights.supply/cb/?token=a6bf1a16-9764-4cfc-b843-5dc0f0ba01ec&RID=
 Tipo de Survey: Samplicious
@@ -1034,13 +740,6 @@ Fecha: 23, February, 2025. 02:24 PM
 Comentario: Si paga
 
 ----------------
-Nombre: https://tegnainc.questionpro.com/a
-URL: https://notch.insights.supply/cb?token=463a4519-dab3-4235-a885-e42e71fb7dcc&RID=
-Tipo de Survey: Samplicious
-Fecha: 23, February, 2025. 10:48 PM
-Comentario: Si paga
-
-----------------
 Nombre: https://surveys.sago.com/survey/selfserve/1819/g0db/
 URL: https://notch.insights.supply/cb?token=312ef1b8-f520-4c8e-b19f-57d47ded4a9d&RID=
 Tipo de Survey: Samplicious
@@ -1059,13 +758,6 @@ Nombre: https://knowledgeuniverse.co1.qualtrics.com/
 URL: https://notch.insights.supply/cb?token=f8bbc072-ea67-44fb-8833-ea0512ee4cda&RID=
 Tipo de Survey: Samplicious
 Fecha: 25, February, 2025. 03:13 PM
-Comentario: si paga
-
-----------------
-Nombre: survey.cmix.com
-URL: https://notch.insights.supply/cb?token=e0d114fd-2705-40d6-8097-659b8e81520e&RID=
-Tipo de Survey: Samplicious
-Fecha: 26, February, 2025. 01:13 AM
 Comentario: si paga
 
 ----------------
@@ -1132,17 +824,24 @@ Fecha: 03, March, 2025. 09:32 PM
 Comentario: si paga
 
 ----------------
-Nombre: https://surveys.sago.com/
-URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx&secret=1574
-Tipo de Survey: Samplicious
-Fecha: 03, March, 2025. 09:32 PM
-Comentario: si paga
-
-----------------
 Nombre: https://consumer.pureprofile.com/
 URL: https://surveys.sample-cube.com/ending?RS=1&RID=xx&secret=40044
 Tipo de Survey: Sample-cube
 Fecha: 04, March, 2025. 05:16 PM
 Comentario: Si paga!
+
+----------------
+Nombre: https://surveys.sago.com/
+URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx&secret=1574
+Tipo de Survey: Sample-cube
+Fecha: 03, March, 2025. 09:32 PM
+Comentario: si paga
+
+----------------
+Nombre: https://participation.dtect.io/
+URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=xxxxxxxxxxxxxxxxxxxxxxxxx&ps_hash=RbLWjvAz
+Tipo de Survey: Spectrum
+Fecha: 04, March, 2025. 09:44 PM
+Comentario: si paga
 
 ----------------
