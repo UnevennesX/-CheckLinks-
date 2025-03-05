@@ -5,13 +5,6 @@ Fecha: 15, August, 2024. 04:03 PM
 Comentario: si paga
 
 ----------------
-Nombre: surveys.getwizer
-URL: https://notch.insights.supply/cb?token=0b54976e-c76f-4b79-ba87-2e636c070950&rid=
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 04:15 PM
-Comentario: si paga
-
-----------------
 Nombre: https://surveys.audience-align.com
 URL: https://notch.insights.supply/cb?token=cb8f4af5-0173-44b1-802a-8c7d5cabd9e3&RID=
 Tipo de Survey: Samplicious
@@ -30,20 +23,6 @@ Nombre: mysoapboax / isa
 URL: https://link.mysoapbox.com/Thanks/Index?auth=10&rid=
 Tipo de Survey: Internos
 Fecha: 15, August, 2024. 08:06 PM
-Comentario: N/A
-
-----------------
-Nombre: rdsecured
-URL: https://www.rdsecured.com/return?inbound_code=1000&rid=
-Tipo de Survey: Internos
-Fecha: 15, August, 2024. 08:07 PM
-Comentario: N/A
-
-----------------
-Nombre: corto spectrum
-URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=
-Tipo de Survey: Spectrum
-Fecha: 15, August, 2024. 08:08 PM
 Comentario: N/A
 
 ----------------
@@ -94,6 +73,20 @@ URL: https://notch.insights.supply/cb?token=9575fc16-0317-4608-93e9-b477730e37ac
 Tipo de Survey: Samplicious
 Fecha: 15, August, 2024. 08:51 PM
 Comentario: tambien tiene interno
+
+----------------
+Nombre: HTTPS://WWW.RDSECURED.COM/
+URL: https://www.rdsecured.com/return?inbound_code=1000&rid=
+Tipo de Survey: Internos
+Fecha: 15, August, 2024. 08:07 PM
+Comentario: Pero este es el corto. que es solo con rid.
+
+----------------
+Nombre: https://spectrumsurveys.com/
+URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=
+Tipo de Survey: Spectrum
+Fecha: 15, August, 2024. 08:08 PM
+Comentario: spectrum corto.
 
 ----------------
 Nombre: https://m.survey.bz
@@ -397,13 +390,6 @@ Fecha: 28, December, 2024. 12:25 AM
 Comentario: si paga
 
 ----------------
-Nombre: rdsecured
-URL: https://www.rdsecured.com/return?inbound_code=1000&rdud=xxxxxxxxxxxxxxxxxxxxxx&rd_proj_ud=xxxxxxxxxxxxxxx
-Tipo de Survey: Internos
-Fecha: 28, December, 2024. 12:31 AM
-Comentario: si paga
-
-----------------
 Nombre: https://www.surveygizmo.com/s3/8154884/440248314063883
 URL: https://notch.insights.supply/cb?token=66f0c8b6-94ce-4f63-b3fd-840e865d80d8&RID=
 Tipo de Survey: Samplicious
@@ -437,6 +423,13 @@ URL: https://notch.insights.supply/cb?token=f565d9d8-fa92-410c-a946-7a39d77811d4
 Tipo de Survey: Samplicious
 Fecha: 19, January, 2025. 12:15 PM
 Comentario: Si paga!
+
+----------------
+Nombre: HTTPS://WWW.RDSECURED.COM/
+URL: https://www.rdsecured.com/return?inbound_code=1000&rdud=xxxxxxxxxxxxxxxxxxxxxx&rd_proj_ud=xxxxxxxxxxxxxxx
+Tipo de Survey: Internos
+Fecha: 28, December, 2024. 12:31 AM
+Comentario: si paga
 
 ----------------
 Nombre: https://survey-response.useglass.com
