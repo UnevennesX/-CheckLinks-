@@ -194,6 +194,20 @@ Fecha: 29, August, 2024. 02:40 PM
 Comentario: si paga!
 
 ----------------
+Nombre: https://incrowdanswers.com
+URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=
+Tipo de Survey: Spectrum
+Fecha: 30, September, 2024. 03:50 PM
+Comentario: usar el corto. si paga
+
+----------------
+Nombre: https://welcome.walr.com
+URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=
+Tipo de Survey: Spectrum
+Fecha: 05, September, 2024. 02:41 PM
+Comentario: Con el cort≤
+
+----------------
 Nombre: https://tssrvy.com
 URL: https://tssrvy.com/r/?st=1&tsid=
 Tipo de Survey: Internos
@@ -229,25 +243,11 @@ Fecha: 04, September, 2024. 11:35 PM
 Comentario: Si paga
 
 ----------------
-Nombre: https://welcome.walr.com
-URL: http://www.corto.com
-Tipo de Survey: Spectrum
-Fecha: 05, September, 2024. 02:41 PM
-Comentario: Con el cort≤
-
-----------------
 Nombre: https://prescan.tofiresearch
 URL: https://notch.insights.supply/cb?token=2a8251a3-5ab4-4188-b5f9-df68686bf3f6&RID=
 Tipo de Survey: Samplicious
 Fecha: 17, September, 2024. 02:44 PM
 Comentario: N/A
-
-----------------
-Nombre: https://incrowdanswers.com
-URL: http://www.corto.com
-Tipo de Survey: Spectrum
-Fecha: 30, September, 2024. 03:50 PM
-Comentario: usar el corto. si paga
 
 ----------------
 Nombre: https://surveys.researchbods.com/survey/selfserve/5a9
@@ -321,7 +321,7 @@ Comentario: si paga
 
 ----------------
 Nombre: https://survey-zljl3724.eu.voxpopme.com
-URL: https://www.corto.com
+URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=
 Tipo de Survey: Spectrum
 Fecha: 11, December, 2024. 01:06 AM
 Comentario: Paga con el corto
