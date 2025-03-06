@@ -26,6 +26,13 @@ Fecha: 05, March, 2025. 04:29 PM
 Comentario: si paga!
 
 ----------------
+Nombre: https://ypulse.iad1.qualtrics.com/
+URL: https://notch.insights.supply/cb?token=04651664-4715-4620-8f59-16a272ff3e4a&RID=
+Tipo de Survey: Samplicious
+Fecha: 06, March, 2025. 02:17 AM
+Comentario: si paga
+
+----------------
 Nombre: https://surveys.audience-align.com
 URL: https://notch.insights.supply/cb?token=cb8f4af5-0173-44b1-802a-8c7d5cabd9e3&RID=
 Tipo de Survey: Samplicious
@@ -108,6 +115,13 @@ URL: https://redirect.mindsharesurveys.com/v1/M7FMAqNSgNBiTKRoDbiNJ4YiXPN2cBin?p
 Tipo de Survey: Invite
 Fecha: 15, August, 2024. 11:38 PM
 Comentario: SI PAGA : )
+
+----------------
+Nombre: https://echoparkautomotive.qualtrics.com/
+URL: https://notch.insights.supply/cb?token=f8bbc072-ea67-44fb-8833-ea0512ee4cda&RID=
+Tipo de Survey: Samplicious
+Fecha: 06, March, 2025. 02:19 AM
+Comentario: si paga
 
 ----------------
 Nombre: https://surveys.system1research.com
