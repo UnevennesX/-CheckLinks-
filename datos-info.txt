@@ -54,6 +54,20 @@ Fecha: 08, March, 2025. 08:49 PM
 Comentario: Si paga
 
 ----------------
+Nombre: https://survey2.eqr1.com/
+URL: https://notch.insights.supply/cb?token=9211a006-2e22-48b6-b528-73b02f5ab7b9&RID=
+Tipo de Survey: Samplicious
+Fecha: 09, March, 2025. 03:10 AM
+Comentario: Si paga
+
+----------------
+Nombre: https://surveys.gartner.com/
+URL: https://notch.insights.supply/cb?token=ccd4b10c-af8b-4939-b99f-0a68f1077051&RID=
+Tipo de Survey: Samplicious
+Fecha: 10, March, 2025. 02:04 AM
+Comentario: Si paga!
+
+----------------
 Nombre: https://surveys.audience-align.com
 URL: https://notch.insights.supply/cb?token=cb8f4af5-0173-44b1-802a-8c7d5cabd9e3&RID=
 Tipo de Survey: Samplicious
@@ -136,6 +150,13 @@ URL: https://redirect.mindsharesurveys.com/v1/M7FMAqNSgNBiTKRoDbiNJ4YiXPN2cBin?p
 Tipo de Survey: Invite
 Fecha: 15, August, 2024. 11:38 PM
 Comentario: SI PAGA : )
+
+----------------
+Nombre: https://activityv2.elementhuman.com/
+URL: https://notch.insights.supply/cb?token=9211a006-2e22-48b6-b528-73b02f5ab7b9&RID=
+Tipo de Survey: Samplicious
+Fecha: 09, March, 2025. 03:15 AM
+Comentario: Si paga
 
 ----------------
 Nombre: https://surveys.system1research.com
