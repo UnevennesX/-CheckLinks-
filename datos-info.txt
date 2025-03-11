@@ -76,14 +76,14 @@ Comentario: Si paga
 
 ----------------
 Nombre: https://survey.us.confirmit.com/
-URL: https://survey.dashmr.com/callback?status=Complete&spid=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&cx=C44379
+URL: https://survey.dashmr.com/callback?status=Complete&spid=&cx=C44379
 Tipo de Survey: Survey.Dashmr
 Fecha: 11, March, 2025. 12:51 AM
 Comentario: si paga
 
 ----------------
 Nombre: https://ssr02.sunseedsurveys.com/
-URL: https://survey.dashmr.com/callback?status=Complete&spid=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&cx=S31223
+URL: https://survey.dashmr.com/callback?status=Complete&spid=&cx=S31223
 Tipo de Survey: Survey.Dashmr
 Fecha: 11, March, 2025. 01:00 AM
 Comentario: si paga
@@ -873,13 +873,6 @@ Fecha: 28, February, 2025. 12:19 AM
 Comentario: si paga
 
 ----------------
-Nombre: https://www.ksr-survey.com/
-URL: https://survey.dashmr.com/callback?status=Complete&spid=xxx
-Tipo de Survey: Survey.Dashmr
-Fecha: 01, March, 2025. 04:15 PM
-Comentario: si paga
-
-----------------
 Nombre: https://panelapps.phronesis-partners.com/
 URL: https://notch.insights.supply/cb?token=1499653c-5310-4cb2-9042-514f6b114713&RID=
 Tipo de Survey: Samplicious
@@ -905,6 +898,13 @@ Nombre: https://participation.dtect.io/
 URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=xxxxxxxxxxxxxxxxxxxxxxxxx&ps_hash=RbLWjvAz
 Tipo de Survey: Spectrum
 Fecha: 04, March, 2025. 09:44 PM
+Comentario: si paga
+
+----------------
+Nombre: https://www.ksr-survey.com/
+URL: https://survey.dashmr.com/callback?status=Complete&spid=
+Tipo de Survey: Survey.Dashmr
+Fecha: 01, March, 2025. 04:15 PM
 Comentario: si paga
 
 ----------------
