@@ -37,7 +37,7 @@ Nombre: https://echoparkautomotive.qualtrics.com/jfe/form/SV_54sRqaTF36gI5tY?
 URL: https://notch.insights.supply/cb?token=06caa12b-9b6f-4a5e-81bf-1206e1f956a3&RID=xxx
 Tipo de Survey: Samplicious
 Fecha: 06, March, 2025. 01:11 PM
-Comentario: Si paga bello bello🥵
+Comentario: Si paga bello belloðŸ¥µ
 
 ----------------
 Nombre: https://survey.cmix.com/
@@ -66,6 +66,20 @@ URL: https://notch.insights.supply/cb?token=ccd4b10c-af8b-4939-b99f-0a68f1077051
 Tipo de Survey: Samplicious
 Fecha: 10, March, 2025. 02:04 AM
 Comentario: Si paga!
+
+----------------
+Nombre: https://robinhood.co1.qualtrics.com/
+URL: https://notch.insights.supply/cb?token=2103a244-9118-4fde-a685-f948e5b8340f&RID=
+Tipo de Survey: Samplicious
+Fecha: 10, March, 2025. 04:08 AM
+Comentario: Si paga
+
+----------------
+Nombre: https://survey.us.confirmit.com/
+URL: https://survey.dashmr.com/callback?status=Complete&spid=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&cx=C44379
+Tipo de Survey: Survey.Dashmr
+Fecha: 11, March, 2025. 12:51 AM
+Comentario: si paga
 
 ----------------
 Nombre: https://surveys.audience-align.com
@@ -233,7 +247,7 @@ Nombre: https://vault.questionlab.com/
 URL: http://www.status/1.com
 Tipo de Survey: Internos
 Fecha: 20, August, 2024. 12:23 AM
-Comentario: Status=1 pagß
+Comentario: Status=1 pagÃŸ
 
 ----------------
 Nombre: https://se.navigatorsurveys.com/
@@ -268,7 +282,7 @@ Nombre: https://welcome.walr.com
 URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=
 Tipo de Survey: Spectrum
 Fecha: 05, September, 2024. 02:41 PM
-Comentario: Con el cort≤
+Comentario: Con el cortâ‰¤
 
 ----------------
 Nombre: https://tssrvy.com
