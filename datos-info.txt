@@ -117,6 +117,13 @@ Fecha: 12, March, 2025. 02:46 PM
 Comentario: si paga
 
 ----------------
+Nombre: https://survey.yougov.com/
+URL: https://s.cint.com/Survey/Complete?ProjectToken=
+Tipo de Survey: Cint
+Fecha: 12, March, 2025. 10:09 PM
+Comentario: si paga
+
+----------------
 Nombre: https://surveys.audience-align.com
 URL: https://notch.insights.supply/cb?token=cb8f4af5-0173-44b1-802a-8c7d5cabd9e3&RID=
 Tipo de Survey: Samplicious
@@ -129,13 +136,6 @@ URL: http://www.genera.com
 Tipo de Survey: Progede
 Fecha: 15, August, 2024. 07:58 PM
 Comentario: Se genera
-
-----------------
-Nombre: https://websurvey5.opinionbar.com
-URL: http://www.status70.com
-Tipo de Survey: Samplicious
-Fecha: 15, August, 2024. 08:26 PM
-Comentario: Envia a otra
 
 ----------------
 Nombre: https://pt.surveysavvy.com / www.survey.com
@@ -465,13 +465,6 @@ URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxxxxxxx&secret=1531
 Tipo de Survey: Sample-cube
 Fecha: 15, August, 2024. 04:35 PM
 Comentario: si paga
-
-----------------
-Nombre: https://globalsurveys.nielsen.com
-URL: https://www.status.70.com
-Tipo de Survey: Samplicious
-Fecha: 19, August, 2024. 04:18 PM
-Comentario: Patea y saca una nueva
 
 ----------------
 Nombre: https://new.surveylion.com
