@@ -131,6 +131,27 @@ Fecha: 13, March, 2025. 10:32 PM
 Comentario: si paga
 
 ----------------
+Nombre: https://sentry.cloudresearch.com/
+URL: https://notch.insights.supply/cb?token=1499653c-5310-4cb2-9042-514f6b114713&RID=
+Tipo de Survey: Samplicious
+Fecha: 14, March, 2025. 01:03 PM
+Comentario: si paga
+
+----------------
+Nombre: https://selfserve.decipherinc.com/
+URL: https://survey.dashmr.com/callback?status=Complete&spid=&cx=M35GTBF9
+Tipo de Survey: Samplicious
+Fecha: 14, March, 2025. 02:52 PM
+Comentario: si paga
+
+----------------
+Nombre: https://mcg.decipherinc.com/
+URL: https://surveys.sample-cube.com/ending?RS=1&RID=&secret=2441
+Tipo de Survey: Samplicious
+Fecha: 14, March, 2025. 05:29 PM
+Comentario: Si paga
+
+----------------
 Nombre: https://surveys.audience-align.com
 URL: https://notch.insights.supply/cb?token=cb8f4af5-0173-44b1-802a-8c7d5cabd9e3&RID=
 Tipo de Survey: Samplicious
