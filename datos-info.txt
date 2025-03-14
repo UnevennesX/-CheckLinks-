@@ -145,9 +145,16 @@ Fecha: 14, March, 2025. 02:52 PM
 Comentario: si paga
 
 ----------------
+Nombre: https://www.net-research.com/
+URL: https://notch.insights.supply/cb?token=96852782-cc29-4309-8734-dfcdf8ce9ac0&RID=
+Tipo de Survey: Samplicious
+Fecha: 14, March, 2025. 05:54 PM
+Comentario: Si paga
+
+----------------
 Nombre: https://mcg.decipherinc.com/
 URL: https://surveys.sample-cube.com/ending?RS=1&RID=&secret=2441
-Tipo de Survey: Samplicious
+Tipo de Survey: Sample-cube
 Fecha: 14, March, 2025. 05:29 PM
 Comentario: Si paga
 
