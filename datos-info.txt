@@ -75,6 +75,13 @@ Fecha: 10, March, 2025. 04:08 AM
 Comentario: Si paga
 
 ----------------
+Nombre: https://upsi.id/
+URL: https://surveys.sample-cube.com/ending?RS=1&RID=&secret=1574
+Tipo de Survey: Sample-cube
+Fecha: 16, March, 2025. 04:19 PM
+Comentario: si paga
+
+----------------
 Nombre: https://survey.us.confirmit.com/
 URL: https://survey.dashmr.com/callback?status=Complete&spid=&cx=C44379
 Tipo de Survey: Survey.Dashmr
@@ -157,6 +164,13 @@ URL: https://surveys.sample-cube.com/ending?RS=1&RID=&secret=2441
 Tipo de Survey: Sample-cube
 Fecha: 14, March, 2025. 05:29 PM
 Comentario: Si paga
+
+----------------
+Nombre: https://invite.mindsharesurveys.com/
+URL: https://surveys.sample-cube.com/ending?RS=1&RID=&profile=0&h=97b93130c04f4163897d0c5396b36edcf9f67493
+Tipo de Survey: Sample-cube
+Fecha: 14, March, 2025. 07:21 PM
+Comentario: si paga
 
 ----------------
 Nombre: https://surveys.audience-align.com
