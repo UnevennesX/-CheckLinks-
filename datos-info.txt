@@ -187,6 +187,13 @@ Fecha: 15, August, 2024. 07:58 PM
 Comentario: Se genera
 
 ----------------
+Nombre: https://app.glimpsehere.com/
+URL: https://www.samplicio.us/s/ClientCallBack.aspx?RIS=10&RID=xxx&RISN=xxx
+Tipo de Survey: Samplicious
+Fecha: 17, March, 2025. 08:41 PM
+Comentario: si paga
+
+----------------
 Nombre: https://pt.surveysavvy.com / www.survey.com
 URL: https://notch.insights.supply/cb?token=1fbf75e8-9380-410c-b922-99fd2ba1bcb7&RID=
 Tipo de Survey: Samplicious
@@ -374,13 +381,6 @@ URL: https://tssrvy.com/r/?st=1&tsid=
 Tipo de Survey: Internos
 Fecha: 29, August, 2024. 05:43 PM
 Comentario: Si paga
-
-----------------
-Nombre: https://x1.intellisurvey.com
-URL: http://www.generar.com
-Tipo de Survey: Samplicious
-Fecha: 31, August, 2024. 08:41 PM
-Comentario: Se genera
 
 ----------------
 Nombre: https://survey.saysoforgood.com
