@@ -383,11 +383,17 @@
         function generarSugerencia(link, match, index, tokenSeleccionado = null, totalMatches) {
             const tokens = generarOpcionesToken(match.URL);
             let selectedToken = tokenSeleccionado;
+            let tokenName = 'token'; // Nombre del parámetro del token, por defecto 'token'
 
             if (!selectedToken && tokens.length > 0) {
                 selectedToken = tokens[0];
             } else if (!selectedToken && tokens.length === 0) {
                 return '<p>No se encontraron tokens disponibles.</p>';
+            }
+
+            // Determinar si se usa 'token' o 'hash'
+            if (match.URL.includes('hash=')) {
+                tokenName = 'hash';
             }
 
 
@@ -429,23 +435,48 @@
                 return `<p>Error: La URL proporcionada no es válida (${match.URL}).</p>`;
             }
 
+            // Determinar la URL base correcta
+            let baseURL;
+            if (match.URL.includes("samplicio.us")) {
+                baseURL = match.URL.substring(0, match.URL.indexOf('?')); // Extract base URL before the query string
+            } else {
+                baseURL = 'https://notch.insights.supply/cb?';
+            }
+
             // Construir la URL basándose en el orden del template
-            let generatedLink = `https://notch.insights.supply/cb?`;
+            let generatedLink = baseURL + (baseURL.includes("?") ? '&' : '?'); // Use '&' if baseURL already has a query string, otherwise use '?'
             let firstParam = true;
 
+            let ridUsed = false;
+
             for (const [paramKey, paramValue] of paramOrder) {
-                let value = paramKey === 'token' ? selectedToken : (paramKey.toLowerCase() === 'rid' ? rid : paramValue);
+                let value;
                 let paramName = paramKey;
 
-                if (paramName.toLowerCase() === 'rid') {
-                    paramName = 'RID'; // Mantener el nombre del parámetro en mayúsculas
+                if (paramKey.toLowerCase() === 'token' || paramKey.toLowerCase() === 'hash') {
+                    value = selectedToken;
+                    paramName = tokenName; // Usar el nombre del parámetro correcto ('token' o 'hash')
+
+                } else if (paramKey === 'RID' || paramKey.toLowerCase() === 'rid') {
+                    value = rid;
+                    paramName = 'RID'; // Forzar a mayúsculas
+                    ridUsed = true;
+                } else {
+                    value = paramValue;
                 }
+
 
                 if (value !== undefined && value !== null && value !== '') { // Agregar solo si tiene valor
                     generatedLink += (firstParam ? '' : '&') + `${paramName}=${value}`;
                     firstParam = false;
                 }
             }
+
+            // Si 'RID' o 'rid' no estaban en el template, agregarlo al final (en mayúsculas)
+            if (!ridUsed && rid !== undefined && rid !== null && rid !== '') {
+                generatedLink += (firstParam ? '' : '&') + `RID=${rid}`;
+            }
+
 
             let tokenOptionsHTML = '';
             if (tokens.length > 1) {
@@ -475,17 +506,27 @@
 
 
         function generarOpcionesToken(url) {
-            const urlParams = new URL(url).searchParams
-            const tokenParam = urlParams.get('token')
+            const urlParams = new URL(url).searchParams;
+            const tokenParam = urlParams.get('token');
+            const hashParam = urlParams.get('hash'); // Buscar también el parámetro 'hash'
+
             if (tokenParam) {
-                return [tokenParam]
+                return [tokenParam];
+            } else if (hashParam) {
+                return [hashParam]; // Si se encuentra 'hash', retornarlo
             }
 
+            // Buscar 'token=' o 'hash=' en la URL
             const tokenMatches = url.match(/token=([a-f0-9-]+)/g);
+            const hashMatches = url.match(/hash=([a-f0-9-]+)/g);
+
             if (tokenMatches) {
-                return tokenMatches.map(match => match.split("=")[1])
+                return tokenMatches.map(match => match.split("=")[1]);
+            } else if (hashMatches) {
+                return hashMatches.map(match => match.split("=")[1]);
             }
-            return []
+
+            return [];
         }
 
 
@@ -543,6 +584,22 @@
             // Check if RID was found *before* playing the suggestion audio
             if (!idNotFoundErrorShown) {
                 playSugerenciaAudio();  // Play audio if RID was found.
+            }
+
+            // Si hay solo una sugerencia, copiar automáticamente el enlace
+            if (coincidencias.length === 1) {
+                const copyLinkElement = document.querySelector('.copy-link');
+                const generatedLink = copyLinkElement.getAttribute('data-link');
+                const originalText = copyLinkElement.textContent;
+
+                copyToClipboard(generatedLink);
+                copyLinkElement.textContent = 'Link Copiado!';
+                copyLinkElement.style.color = 'palevioletred';
+
+                setTimeout(() => {
+                    copyLinkElement.textContent = originalText;
+                    copyLinkElement.style.color = ''; // Reset to default color
+                }, 3000); // 3 segundos
             }
 
             const opcionesToken = document.querySelectorAll('.opcion-token');
