@@ -187,6 +187,13 @@ Fecha: 15, August, 2024. 07:58 PM
 Comentario: Se genera
 
 ----------------
+Nombre: https://wasserman.az1.qualtrics.com/
+URL: https://notch.insights.supply/cb?token=83153c69-b8c6-442f-8ea9-1b4f5b6e26bf&RID=
+Tipo de Survey: Samplicious
+Fecha: 18, March, 2025. 03:42 AM
+Comentario: si paga
+
+----------------
 Nombre: https://pt.surveysavvy.com / www.survey.com
 URL: https://notch.insights.supply/cb?token=1fbf75e8-9380-410c-b922-99fd2ba1bcb7&RID=
 Tipo de Survey: Samplicious
