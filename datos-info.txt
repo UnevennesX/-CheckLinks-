@@ -194,6 +194,13 @@ Fecha: 18, March, 2025. 05:16 AM
 Comentario: Si paga
 
 ----------------
+Nombre: https://participation.dtect.io/
+URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=xxxx&ps_hash=RbLWjvAz
+Tipo de Survey: Spectrum
+Fecha: 19, March, 2025. 03:17 AM
+Comentario: si paga
+
+----------------
 Nombre: https://pt.surveysavvy.com / www.survey.com
 URL: https://notch.insights.supply/cb?token=1fbf75e8-9380-410c-b922-99fd2ba1bcb7&RID=
 Tipo de Survey: Samplicious
@@ -236,6 +243,13 @@ Fecha: 15, August, 2024. 08:51 PM
 Comentario: tambien tiene interno
 
 ----------------
+Nombre: https://us1se.voxco.com/
+URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=
+Tipo de Survey: Spectrum
+Fecha: 19, March, 2025. 11:39 PM
+Comentario: si paga
+
+----------------
 Nombre: https://www.rdsecured.com/
 URL: https://www.rdsecured.com/return?inbound_code=1000&rid=
 Tipo de Survey: Internos
@@ -255,6 +269,13 @@ URL: https://notch.insights.supply/cb?token=9211a006-2e22-48b6-b528-73b02f5ab7b9
 Tipo de Survey: Samplicious
 Fecha: 09, March, 2025. 03:15 AM
 Comentario: Si paga
+
+----------------
+Nombre: https://harrisx.decipherinc.com/
+URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=xxxxx&_k=2
+Tipo de Survey: Spectrum
+Fecha: 19, March, 2025. 03:25 AM
+Comentario: si paga
 
 ----------------
 Nombre: https://rl.sawtoothsoftware.com
