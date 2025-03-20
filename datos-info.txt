@@ -264,6 +264,20 @@ Fecha: 15, August, 2024. 08:07 PM
 Comentario: Pero este es el corto. que es solo con rid.
 
 ----------------
+Nombre: https://surveys.thepeopleplatform.com/
+URL: https://notch.insights.supply/cb?token=818e96c3-d289-4cfe-b8da-f54f74ab75f0&RID=
+Tipo de Survey: Samplicious
+Fecha: 20, March, 2025. 02:47 AM
+Comentario: si paga
+
+----------------
+Nombre: https://google.com/inst.ocla/.cla
+URL: https://uf.sampleeye.com/end?RT=xxxcodexxxx&Status=5/loque/sea
+Tipo de Survey: Samplicious
+Fecha: 20, March, 2025. 01:01 PM
+Comentario: si paga
+
+----------------
 Nombre: https://m.survey.bz
 URL: https://redirect.mindsharesurveys.com/v1/M7FMAqNSgNBiTKRoDbiNJ4YiXPN2cBin?proj=XXXXXXXXXXXXX&id=XXXXXXXXXXX&status=1
 Tipo de Survey: Invite
