@@ -271,6 +271,13 @@ Fecha: 20, March, 2025. 02:47 AM
 Comentario: si paga
 
 ----------------
+Nombre: https://survey.alchemer.com/
+URL: https://survey.dashmr.com/callback?status=Complete&spid=&cx=A44504
+Tipo de Survey: Survey.Dashmr
+Fecha: 21, March, 2025. 05:31 PM
+Comentario: si paga
+
+----------------
 Nombre: https://s.gongos.com/
 URL: https://survey.dashmr.com/callback?status=Complete&spid=&cx=A44398
 Tipo de Survey: Survey.Dashmr
@@ -681,13 +688,6 @@ Nombre: https://www.escalentsurvey.co/
 URL: https://notch.insights.supply/cb?token=fc6e54d6-c138-4ea4-aaec-ec14e3907662&RID=xxxxxx
 Tipo de Survey: Samplicious
 Fecha: 05, February, 2025. 09:39 PM
-Comentario: si paga
-
-----------------
-Nombre: https://survey.sightx.io/
-URL: https://notch.insights.supply/cb?token=d1cdad74-0c62-4cd1-b68b-9763d7c05f09&RID=
-Tipo de Survey: Samplicious
-Fecha: 06, February, 2025. 03:05 PM
 Comentario: si paga
 
 ----------------
