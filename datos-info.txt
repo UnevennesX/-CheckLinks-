@@ -285,6 +285,13 @@ Fecha: 20, March, 2025. 03:00 PM
 Comentario: si paga
 
 ----------------
+Nombre: https://web.questivox.com/
+URL: https://notch.insights.supply/cb?token=d9234d9c-24de-4dd6-8a2f-eaa11706885f&RID=
+Tipo de Survey: Samplicious
+Fecha: 22, March, 2025. 12:37 AM
+Comentario: si paga
+
+----------------
 Nombre: https://m.survey.bz
 URL: https://redirect.mindsharesurveys.com/v1/M7FMAqNSgNBiTKRoDbiNJ4YiXPN2cBin?proj=XXXXXXXXXXXXX&id=XXXXXXXXXXX&status=1
 Tipo de Survey: Invite
@@ -303,6 +310,13 @@ Nombre: https://harrisx.decipherinc.com/
 URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=xxxxx&_k=2
 Tipo de Survey: Spectrum
 Fecha: 19, March, 2025. 03:25 AM
+Comentario: si paga
+
+----------------
+Nombre: https://surveys.getwizer.com/
+URL: https://notch.insights.supply/cb?token=0b54976e-c76f-4b79-ba87-2e636c070950&rid=
+Tipo de Survey: Samplicious
+Fecha: 24, March, 2025. 11:19 PM
 Comentario: si paga
 
 ----------------
