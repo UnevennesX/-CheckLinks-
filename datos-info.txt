@@ -145,13 +145,6 @@ Fecha: 14, March, 2025. 01:03 PM
 Comentario: si paga
 
 ----------------
-Nombre: https://selfserve.decipherinc.com/
-URL: https://survey.dashmr.com/callback?status=Complete&spid=&cx=M35GTBF9
-Tipo de Survey: Samplicious
-Fecha: 14, March, 2025. 02:52 PM
-Comentario: si paga
-
-----------------
 Nombre: https://www.net-research.com/
 URL: https://notch.insights.supply/cb?token=96852782-cc29-4309-8734-dfcdf8ce9ac0&RID=
 Tipo de Survey: Samplicious
@@ -404,11 +397,46 @@ Fecha: 05, September, 2024. 02:41 PM
 Comentario: Con el corto
 
 ----------------
+Nombre: https://participation.dtect.io/
+URL: https://notch.insights.supply/cb?token=4396df28-e728-407d-be0b-75c77a88826d&RID=
+Tipo de Survey: Samplicious
+Fecha: 25, March, 2025. 07:06 PM
+Comentario: si paga
+
+----------------
+Nombre: https://www.surveys.online/
+URL: https://notch.insights.supply/cb?token=45c3cddb-6b57-4b74-83ff-ad9cbc56c92a&RID=
+Tipo de Survey: Samplicious
+Fecha: 25, March, 2025. 08:08 PM
+Comentario: si paga
+
+----------------
+Nombre: https://selfserve.decipherinc.com/
+URL: https://survey.dashmr.com/callback?status=Complete&spid=&cx=M35GTBF9
+Tipo de Survey: Survey.Dashmr
+Fecha: 14, March, 2025. 02:52 PM
+Comentario: si paga
+
+----------------
+Nombre: https://emea.focusvision.com/survey/selfserve/1da7/
+URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxx&secret=606
+Tipo de Survey: Sample-cube
+Fecha: 28, March, 2025. 05:45 PM
+Comentario: Si paga!
+
+----------------
 Nombre: https://survey.saysoforgood.com
 URL: https://surveys.sample-cube.com/ending?RS=1&RID=
 Tipo de Survey: Sample-cube
 Fecha: 01, September, 2024. 08:27 PM
 Comentario: Si paga
+
+----------------
+Nombre: https://direct.crowdtap.com/
+URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=
+Tipo de Survey: Spectrum
+Fecha: 02, April, 2025. 12:13 AM
+Comentario: SI paga!
 
 ----------------
 Nombre: https://x1.intellisurvey.com/pub/k240710257b
