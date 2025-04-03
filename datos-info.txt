@@ -446,6 +446,13 @@ Fecha: 04, September, 2024. 11:35 PM
 Comentario: Si paga
 
 ----------------
+Nombre: https://cobaltskysurveys.com/
+URL: https://spectrumsurveys.com/surveydone?st=21&transaction_id=&hash=ee62665e6679c86ce9457ec7a8987a1af127013d
+Tipo de Survey: Spectrum
+Fecha: 03, April, 2025. 02:18 PM
+Comentario: Si paga!
+
+----------------
 Nombre: https://prescan.tofiresearch
 URL: https://notch.insights.supply/cb?token=2a8251a3-5ab4-4188-b5f9-df68686bf3f6&RID=
 Tipo de Survey: Samplicious
@@ -521,6 +528,13 @@ URL: https://notch.insights.supply/cb?token=833f76b2-5b65-45b4-95d0-a3252c8776ad
 Tipo de Survey: Samplicious
 Fecha: 11, December, 2024. 04:31 AM
 Comentario: Si paga
+
+----------------
+Nombre: https://cobaltskysurveys.com/s
+URL: https://cobaltskysurveys.com/surveys/purespectrum/end.asp?st=21&id=2SqPlLqRBQYUyPEkO4Aida
+Tipo de Survey: Internos
+Fecha: 03, April, 2025. 02:18 PM
+Comentario: Si paga!
 
 ----------------
 Nombre: https://brandresearch.qualtrics.com/jfe/form/SV
@@ -696,6 +710,13 @@ URL: https://notch.insights.supply/cb?token=68f41caf-9154-4775-991e-9f1e08ec325c
 Tipo de Survey: Samplicious
 Fecha: 01, February, 2025. 08:34 PM
 Comentario: si paga
+
+----------------
+Nombre: https://selfserve.decipherinc.com/survey/selfserve/20af/
+URL: https://notch.insights.supply/cb?token=14caa97d-0433-413d-81e1-aebb3b94bb90&RID=
+Tipo de Survey: Samplicious
+Fecha: 03, April, 2025. 02:19 PM
+Comentario: Me pago. Revisen
 
 ----------------
 Nombre: https://uk.focusvision.com/survey/selfserve/220e/
@@ -983,5 +1004,12 @@ URL: https://survey.dashmr.com/callback?status=Complete&spid=
 Tipo de Survey: Survey.Dashmr
 Fecha: 01, March, 2025. 04:15 PM
 Comentario: si paga
+
+----------------
+Nombre: https://hub.allglobalcircle.com/
+URL: https://surveys.sample-cube.com/ending?RS=1&RID=xxx&secret=39767
+Tipo de Survey: Sample-cube
+Fecha: 03, April, 2025. 02:20 PM
+Comentario: Si paga!
 
 ----------------
