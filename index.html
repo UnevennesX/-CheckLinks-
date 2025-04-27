@@ -400,11 +400,11 @@
             // Extraer el RID del enlace
             let rid = null;
 
-            // Expresión regular para buscar un RID que comience con "67" y tenga el formato deseado
-            const ridRegex = /(67[0-9a-fA-F]{2,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{12,})/i;  // La "i" hace la búsqueda insensible a mayúsculas. Ajusta las cantidades de digitos.
+            // Expresión regular para buscar un RID que comience con "68" y tenga el formato deseado
+            const ridRegex = /(68[0-9a-fA-F]{2,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{4,}-[0-9a-fA-F]{12,})/i;  // La "i" hace la búsqueda insensible a mayúsculas. Ajusta las cantidades de digitos.
 
             // Intentar extraer el RID como parámetro explícito
-            const ridParamMatch = link.match(/[?&]RID=(67[0-9a-fA-F-]+)/i);
+            const ridParamMatch = link.match(/[?&]RID=(68[0-9a-fA-F-]+)/i);
             if (ridParamMatch) {
                 rid = ridParamMatch[1];
             } else {
@@ -417,7 +417,7 @@
                 idNotFoundErrorShown = true; // Set the flag to true after showing the message.
                 ohnoVideoDiv.style.display = 'block';
                 playVideo();  // Play the video
-                return '<p>No se encontró un ID que empiece por 67 con el formato esperado en el enlace.</p>';  // Show the message
+                return '<p>No se encontró un ID que empiece por 68 con el formato esperado en el enlace.</p>';  // Show the message
 
             } else if (!rid && idNotFoundErrorShown) {
                 return '';
