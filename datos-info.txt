@@ -467,6 +467,13 @@ Fecha: 28, April, 2025. 12:29 PM
 Comentario: SI PAGA!
 
 ----------------
+Nombre: https://surveys.zogbyanalytics.com/
+URL: https://notch.insights.supply/cb?token=8129a545-a972-4841-976e-b3462c6d9376&RID=
+Tipo de Survey: Samplicious
+Fecha: 02, May, 2025. 01:39 AM
+Comentario: si paga
+
+----------------
 Nombre: https://surveys.researchbods.com/survey/selfserve/5a9
 URL: https://notch.insights.supply/cb?token=feea7119-8b04-41f6-979f-8ca2a130ed78&RID=
 Tipo de Survey: Samplicious
@@ -1010,7 +1017,7 @@ Nombre: https://www.ksr-survey.com/
 URL: https://survey.dashmr.com/callback?status=Complete&spid=
 Tipo de Survey: Survey.Dashmr
 Fecha: 01, March, 2025. 04:15 PM
-Comentario: si paga!
+Comentario: si paga
 
 ----------------
 Nombre: https://hub.allglobalcircle.com/
